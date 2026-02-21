@@ -1,0 +1,699 @@
+{
+  "regions": {
+    "masthead": {
+      "label": "Masthead",
+      "description": "Takvim-i Vekayi, Issue 1 — Title and Date",
+      "xywh": [
+        2431,
+        0,
+        2568,
+        698
+      ],
+      "lines": [
+        {
+          "line": 1,
+          "script": "تقویم وقایع",
+          "transliteration": "Taḳvîm-i Veḳâyi'",
+          "literal": "Calendar of Events",
+          "modern": "Calendar of Events [Official Ottoman Gazette]"
+        },
+        {
+          "line": 2,
+          "script": "دفعه",
+          "transliteration": "Def'a",
+          "literal": "Issue / Edition",
+          "modern": "Issue [Number]"
+        },
+        {
+          "line": 3,
+          "script": "١",
+          "transliteration": "1",
+          "literal": "One",
+          "modern": "[Issue] 1"
+        },
+        {
+          "line": 4,
+          "script": "شروع فی جا",
+          "transliteration": "Şürû' fî C[umâde'l-âḫir]",
+          "literal": "Beginning in Jumada al-Akhir",
+          "modern": "Commencing in [the month of] Jumada al-Akhir"
+        },
+        {
+          "line": 5,
+          "script": "٢٥",
+          "transliteration": "25",
+          "literal": "Twenty-five",
+          "modern": "[Day] 25"
+        },
+        {
+          "line": 6,
+          "script": "١٢٤٧",
+          "transliteration": "1247",
+          "literal": "One thousand two hundred forty-seven",
+          "modern": "[Year] 1247 [AH]"
+        },
+        {
+          "line": 7,
+          "script": "سنه",
+          "transliteration": "Sene",
+          "literal": "Year",
+          "modern": "Year"
+        }
+      ],
+      "summary": "TAKVÎM-İ VEKÂYİ (CALENDAR OF EVENTS)\n\nIssue 1\n\nCommencing: 25 Jumada al-Akhir 1247 (November 1, 1831)"
+    },
+    "rh_column": {
+      "label": "Right-Hand Column",
+      "description": "Internal Affairs (Umûr-ı Dâḫiliye)",
+      "xywh": [
+        3461,
+        703,
+        1538,
+        2797
+      ],
+      "lines": [
+        {
+          "line": 1,
+          "script": "❁ امور داخلیه ❁",
+          "transliteration": "Umûr-ı Dâḫiliye",
+          "literal": "Affairs of Internal [Matters]",
+          "modern": "Internal Affairs"
+        },
+        {
+          "line": 2,
+          "script": "خصوص آتی شوکتلو قدرتلو مهابتلو پادشاه اسلام پناه افندیمز حضرتلرینك",
+          "transliteration": "Ḫuṣûṣ-ı âtî şevketlü ḳudretlü mehâbetlü pâdişâh-ı İslâm-penâh efendimiz ḥażretleriniñ",
+          "literal": "The following matter: Of His Majesty our master, the Islam-protecting Padishah possessing majesty, power, and grandeur",
+          "modern": "The following matter concerns His Majesty our Padishah, Protector of Islam, possessed of majesty, power, and grandeur,"
+        },
+        {
+          "line": 3,
+          "script": "برایا پرورلك نیت خیریه سیله چند ماه مقدم وقوعبولان اقدکز بوغازینه و ادرنه یه",
+          "transliteration": "berâyâ-perverlik niyet-i ḫayriyesiyle çend mâh muḳaddem vuḳû'-bulan Aḳdeñiz boġazına ve Edirne'ye",
+          "literal": "With the benevolent intention of subject-cherishing, [regarding that which] occurred several months ago, to the Aegean strait and to Edirne",
+          "modern": "Whose benevolent intention to care for his subjects [led to] the journey that took place several months ago to the Dardanelles and Edirne."
+        },
+        {
+          "line": 4,
+          "script": "عزیمت همایونلرینی ناطق مادۀ مخصوصه در که تبرکا بونکله ابتدا اولنمشدر",
+          "transliteration": "'azîmet-i hümâyûnlarını nâṭıḳ mâdde-i maḫṣûṣadır ki teberrüken bunuñla ibtidâ olunmuşdur",
+          "literal": "It is the special article speaking of their imperial journey, with which, for blessing, a beginning has been made",
+          "modern": "This is the special article describing His Imperial journey, with which [this newspaper] has been auspiciously inaugurated."
+        },
+        {
+          "line": 5,
+          "script": "[Empty line - spacing in original]",
+          "transliteration": "—",
+          "literal": "—",
+          "modern": "—"
+        },
+        {
+          "line": 6,
+          "script": "شهریار محاسن اطوار شوکتلو افندیمز حضرتلرینك متصف اولدقلری رعیت پرورلك",
+          "transliteration": "Şehriyâr-ı meḥâsin-i eṭvâr şevketlü efendimiz ḥażretleriniñ muttaṣıf olduḳları re'âyet-perverlik",
+          "literal": "The sovereign of beautiful manners, our majestic master His Majesty's, the subject-cherishing [quality] with which they are characterized",
+          "modern": "His Majesty our Sovereign of fine conduct is characterized by his care for his subjects."
+        },
+        {
+          "line": 7,
+          "script": "اقتضا سنجه اخبار وفن جغرافیا واسطه سیله هر نقدر معلوم همایونلری ایسه ده",
+          "transliteration": "iḳtiżâsınca aḫbâr ü fenn-i coġrafya vâsıṭasıyla her ne ḳadar ma'lûm-ı hümâyûnları ise de",
+          "literal": "According to its requirement, through news and the science of geography, however much it may be their imperial knowledge, yet",
+          "modern": "Although news and the science of geography have informed His Imperial Majesty to some extent,"
+        },
+        {
+          "line": 8,
+          "script": "لیس الخبر کالمعانیه یولندن كرك اهل اسلام وكرك اهل ذمت رعایاسنك",
+          "transliteration": "\"leyse'l-ḫaber ke'l-mu'âyene\" yolundan gerek ehl-i İslâm ve gerek ehl-i żimmet re'âyâsınıñ",
+          "literal": "From the path of \"the report is not like direct observation,\" both the Muslim subjects' and the dhimmi subjects'",
+          "modern": "Following the principle that \"hearing is not like seeing,\" both the Muslim and non-Muslim subjects'"
+        },
+        {
+          "line": 9,
+          "script": "احوالنی وقلاع خاقانیه سنك استحکامات وکیفیاتی کمال شفقت وهمت",
+          "transliteration": "aḥvâlını ve ḳılâ'-ı ḫâḳâniyesiniñ istiḥkâmât ü keyfiyâtını kemâl-i şefḳat ü himmet-i",
+          "literal": "Their conditions and the imperial fortresses' fortifications and states, with complete compassion and endeavor",
+          "modern": "[To observe] their conditions, and the fortifications and state of the imperial fortresses, with complete compassion and the endeavor"
+        },
+        {
+          "line": 10,
+          "script": "علیه لرندن رأی العین مشاهده یه مقدمۀ خیر اولمق اوزره مثلی مسبوق اولمیان",
+          "transliteration": "'aliyyelerinden re'ye'l-'ayn müşâhedeye muḳaddime-i ḫayr olmaḳ üzere mis̱li mesbûḳ olmayan",
+          "literal": "From their exalted [person], to observe with their own eyes, as an auspicious prelude, unprecedented in example",
+          "modern": "Of His exalted person to observe with his own eyes—as an auspicious beginning, in an unprecedented manner—"
+        },
+        {
+          "line": 11,
+          "script": "تواضعات بنده پرورانه ایله نفس نفیس همایونلرینه حرکت کلفتنی اختیار ومحضا",
+          "transliteration": "tevâżu'ât-ı bende-perverâne ile nefs-i nefîs-i hümâyûnlarına ḥareket külfetini iḫtiyâr ü maḥżâ",
+          "literal": "With servant-nurturing humilities, to their precious imperial person the burden of movement choosing, and purely",
+          "modern": "With humble, servant-nurturing condescension, [His Majesty] chose to burden his precious imperial person with travel, and purely"
+        },
+        {
+          "line": 12,
+          "script": "فقرایه شهریار مشفق اولدقلرینی ذاتا دخی اعلان واظهار ضمننده ذکر اولنان",
+          "transliteration": "fuḳarâya şehriyâr-ı müşfiḳ olduḳlarını żâten daḫi i'lân ü iẓhâr żımnında żikr olunan",
+          "literal": "That they are a compassionate sovereign to the poor, also inherently announcing and displaying, in the context of the mentioned",
+          "modern": "To announce and demonstrate his inherent compassion as a sovereign to the poor, [he visited] the mentioned"
+        },
+        {
+          "line": 13,
+          "script": "محللری معاینه یه قصد واراده بیوروب در سعادتلرندن بیك ایکیوز قرق التی",
+          "transliteration": "maḥalleri mu'âyeneye ḳaṣd ü irâde buyurub Der-sa'âdetlerinden biñ ikiyüz ḳırḳ altı",
+          "literal": "Places, to inspect, intending and willing, from their Gate of Felicity [Istanbul], one thousand two hundred forty-six",
+          "modern": "Places, intending to inspect [them]. [Departing] from Istanbul in [the year] one thousand two hundred and forty-six [1246 AH],"
+        },
+        {
+          "line": 14,
+          "script": "سنه سی ذی الحجة الشریفه سنك یکرمی ایکنجی ومایسك كذلك یکرمی ایکنجیسی",
+          "transliteration": "senesi Żi'l-ḥicce'ş-şerîfesiniñ yigirmi ikinci ve Mâyısıñ keżâlik yigirmi ikincisi",
+          "literal": "Year's, of the noble Dhu'l-Hijja, the twenty-second, and of May likewise the twenty-second",
+          "modern": "On the twenty-second of the noble month of Dhu'l-Hijja [1246], which was likewise the twenty-second of May [1831],"
+        },
+        {
+          "line": 15,
+          "script": "کونی واقع اولان جمعه کونی نمازی ادادن صکره رسمی اماده اولان دوننمای",
+          "transliteration": "günü vâḳi' olan cum'a günü namazı edâdan ṣoñra resmî âmâde olan donanmâ-yı",
+          "literal": "On the day occurring, the Friday day, after performing the prayer, the officially prepared fleet",
+          "modern": "On the Friday that fell [on that day], after performing the Friday prayer, with the officially prepared"
+        },
+        {
+          "line": 16,
+          "script": "همایون ایله شرفرسان نام فرقتینه راکبا اقدکز بوغازینه عزیمت بیوردیلر",
+          "transliteration": "hümâyûn ile Şeref-resân nâm firḳatîne râkiben Aḳdeñiz boġazına 'azîmet buyurdılar",
+          "literal": "Imperial, with, boarding the frigate named Şeref-resan, to the Aegean strait they deigned to depart",
+          "modern": "Imperial Fleet, [His Majesty] boarded the frigate named Şeref-resan [Honor-Bestowing] and departed for the Dardanelles."
+        },
+        {
+          "line": 17,
+          "script": "دوننمای همایون اوچ قپاق ودرت فرقتین ودرت قوروت و بر واپور",
+          "transliteration": "Donanmâ-yı hümâyûn üç ḳapaḳ ve dört firḳatîn ve dört ḳorvit ve bir vâpûr",
+          "literal": "The imperial fleet: three ships-of-the-line and four frigates and four corvettes and one steamship",
+          "modern": "The Imperial Fleet [consisted of] three ships-of-the-line, four frigates, four corvettes, and one steamship,"
+        },
+        {
+          "line": 18,
+          "script": "وایکی قوتر که جمعا اون بش قطعه سفایندر التی کون کلیبولیده اقامت",
+          "transliteration": "ve iki ḳutter ki cem'an on beş ḳıṭ'a sefâyindir altı gün Gelibolu'da iḳâmet",
+          "literal": "And two cutters, which in total are fifteen pieces of ships; six days in Gallipoli staying",
+          "modern": "And two cutters—totaling fifteen vessels. [His Majesty] stayed six days in Gallipoli,"
+        },
+        {
+          "line": 19,
+          "script": "وصلوۀ جمعه یی معیت شاهانه ده اولان امام ثانی حضرت شهریاری کبار",
+          "transliteration": "ve ṣalât-ı cum'ayı ma'iyyet-i şâhânede olan imâm-ı s̱ânî-i ḥażret-i şehriyârî kibâr",
+          "literal": "And the Friday prayer, with the second imam who is in the royal retinue, of His Majesty the Sovereign, senior",
+          "modern": "And [performed] the Friday prayer, [led by] the Second Imam of His Majesty's royal retinue, [one of] the senior"
+        },
+        {
+          "line": 20,
+          "script": "مدرسیندن مصطفی نوری افندی یه اقتداۀ غازی سلیمان پاشا جامعنده",
+          "transliteration": "müderrisînden Muṣṭafâ Nûrî Efendi'ye iḳtidâen Ġâzî Süleymân Paşa câmi'inde",
+          "literal": "From among the professors, following Mustafa Nuri Efendi, in the Gazi Suleyman Pasha mosque",
+          "modern": "Professors, Mustafa Nuri Efendi, [the prayer being performed] following [his lead] at the Gazi Süleyman Pasha Mosque."
+        },
+        {
+          "line": 21,
+          "script": "ادادن صکره دوننما ایله قلعۀ سلطانیه یه عزیمت و بر هفته دن صکره دوننمای",
+          "transliteration": "edâdan ṣoñra donanma ile Ḳal'a-i Sulṭâniye'ye 'azîmet ve bir haftadan ṣoñra donanmâ-yı",
+          "literal": "After performing, with the fleet to the Sultanic Fortress departing, and after one week, the fleet",
+          "modern": "After [the prayer], [His Majesty] departed with the fleet for Kale-i Sultaniye [Çanakkale], and after one week, the"
+        },
+        {
+          "line": 22,
+          "script": "همایونی بوغازده توقیف برله واپور ایله اشبو قرق یدی سنه سی محرم الحرامك",
+          "transliteration": "hümâyûnı boġazda tevḳîf birle vâpûr ile işbu ḳırḳ yedi senesi Muḥarremü'l-ḥarâmıñ",
+          "literal": "Imperial, at the strait stopping, with steamship, this forty-seven year, of Muharram the Sacred's",
+          "modern": "Imperial Fleet was left at the strait while [His Majesty traveled] by steamship. In this year forty-seven [1247 AH], on the Sacred month of Muharram's"
+        },
+        {
+          "line": 23,
+          "script": "التنجی جمعه کونی ینه نمازی بعد الادا مدینۀ کلیبولی یه عودت بیورلمشدر",
+          "transliteration": "altıncı cum'a günü yine namazı ba'de'l-edâ medîne-i Gelibolu'ya 'avdet buyurulmuşdur",
+          "literal": "Sixth, Friday day, again the prayer after performing, to the city of Gallipoli, return was commanded",
+          "modern": "Sixth, a Friday, after again performing the prayer, [His Majesty] returned to the city of Gallipoli."
+        },
+        {
+          "line": 24,
+          "script": "ماه مرقومك یدنجی کونی مدینۀ مزبوره دن علی السحر نهضت و اورشه",
+          "transliteration": "mâh-ı merḳûmuñ yedinci günü medîne-i mezbûreden 'ale's-seḥer nehżat ü Oreşe",
+          "literal": "Of the mentioned month's seventh day, from the mentioned city, at dawn departing, and to Oreşe",
+          "modern": "On the seventh of the mentioned month, [His Majesty] departed from the mentioned city at dawn, [proceeding] to Oreşe,"
+        },
+        {
+          "line": 25,
+          "script": "وکشان وجسر ارکنه ده سرای تخصیص بیوریلان اعیان قوناقلرنده و ادرنه یه",
+          "transliteration": "ve Keşân ve Cisr-i Ergene'de serây taḫṣîṣ buyurulan a'yân ḳonaḳlarında ve Edirne'ye",
+          "literal": "And Keşan and at Cisr-i Ergene, at the notables' mansions designated as palace, and to Edirne",
+          "modern": "Keşan, and Cisr-i Ergene, [staying] at the notables' mansions designated for [his] lodging, and toward Edirne."
+        },
+        {
+          "line": 26,
+          "script": "اوچ ساعت مسافه ده اولان قره قاسم نام چفتلکده بر کیجه بیتوتت",
+          "transliteration": "üç sâ'at mesâfede olan Ḳara Ḳâsım nâm çiftlikde bir gice beytûtet",
+          "literal": "At three hours' distance being, at the farm named Kara Kasım, one night lodging",
+          "modern": "At the farm named Kara Kasım, which is three hours' distance [from Edirne], [His Majesty] spent one night,"
+        },
+        {
+          "line": 27,
+          "script": "بیوریلوب شهر مزبورك اون برنجی چهار شنبه کونی ادرنه یه یارم ساعت محلده",
+          "transliteration": "buyurulub şehr-i mezbûruñ on birinci çihâr-şenbe günü Edirne'ye yarım sâ'at maḥalde",
+          "literal": "Being commanded; of the mentioned city's eleventh, Wednesday day, to Edirne, at half an hour's place",
+          "modern": "And on the eleventh [of Muharram], a Wednesday, at a place half an hour from Edirne,"
+        },
+        {
+          "line": 28,
+          "script": "واقع صولاق چشمه سندن ترتیب اولنان الای والا ایله سلطان سلیم خان ثانی",
+          "transliteration": "vâḳi' Ṣolaḳ Çeşmesi'nden tertîb olunan alây-ı vâlâ ile Sulṭân Selîm Ḫân-ı S̱ânî",
+          "literal": "Situated Solak Fountain, from, arranged being, with the lofty procession, Sultan Selim Khan the Second",
+          "modern": "From the Solak Fountain, with a grand procession arranged [in his honor], [proceeding to] Sultan Selim Khan II's"
+        },
+        {
+          "line": 29,
+          "script": "حضرتلرینك جامعی جوارنده حالا صدر اعظم حضرتلرینك سلحداری",
+          "transliteration": "ḥażretleriniñ câmi'i civârında ḥâlâ ṣadr-ı a'ẓam ḥażretleriniñ silâḥdârı",
+          "literal": "His Majesty's mosque's vicinity, presently the Grand Vizier His Excellency's swordbearer",
+          "modern": "[The Selimiye] Mosque. In the vicinity [of the mosque], [at the mansion of] the current Grand Vizier's sword-bearer,"
+        },
+        {
+          "line": 30,
+          "script": "راشد اغانك جدید ودلنشین اولوب سرای تخصیص اولنان قوناغنی",
+          "transliteration": "Râşid Aġa'nıñ cedîd ü dilnişîn olub serây taḫṣîṣ olunan ḳonaġını",
+          "literal": "Raşid Ağa's, new and delightful being, as palace designated being, mansion",
+          "modern": "Raşid Ağa's mansion, which is new and pleasant and was designated as [the imperial] palace,"
+        },
+        {
+          "line": 31,
+          "script": "تشریف بیورمشلردر ذکر اولنان چشمه باشندن ادرنه ملاسى وبالجمله",
+          "transliteration": "teşrîf buyurmuşlardır żikr olunan çeşme başından Edirne mollâsı ve bi'l-cümle",
+          "literal": "They deigned to honor; from the mentioned fountain's head, the Edirne Molla and altogether",
+          "modern": "[His Majesty] deigned to honor [with his presence]. From the mentioned fountain, the Molla of Edirne and all"
+        },
+        {
+          "line": 32,
+          "script": "علما ومشایخ استقبال همایونه اماده اولوب ومکتب خواجه لری بالجمله",
+          "transliteration": "'ulemâ ü meşâyiḫ istiḳbâl-i hümâyûna âmâde olub ve mekteb ḫˇâceleri bi'l-cümle",
+          "literal": "Ulema and sheikhs, for the imperial reception prepared being, and school teachers altogether",
+          "modern": "The ulema and sheikhs prepared for the imperial reception, and the schoolteachers with all"
+        },
+        {
+          "line": 33,
+          "script": "صبیان ایله وروم وارمنی ویهود راهب و خاخاملری چوجو قلرایله لباس",
+          "transliteration": "ṣıbyân ile ve Rûm ve Ermenî ve Yahûd râhib ü ḫâḫâmları çocuḳlarıyla libâs-ı",
+          "literal": "With boys, and Greek and Armenian and Jewish priests and rabbis, with their children, clothing of",
+          "modern": "Their pupils, and the Greek, Armenian, and Jewish priests and rabbis with their children, wearing their"
+        },
+        {
+          "line": 34,
+          "script": "تعظیملرین کیوب شاهراهده قیام ودعا وثنا ایله صدالرینی بلند ایتمشلردر",
+          "transliteration": "ta'ẓîmlerini giyüb şâh-râhda ḳıyâm ü du'â ü s̱enâ ile ṣadâlarını büland etmişlerdir",
+          "literal": "Their ceremonial [garments] wearing, on the royal road standing, and with prayer and praise their voices raised",
+          "modern": "Ceremonial garments, stood along the royal road, raising their voices in prayer and praise."
+        },
+        {
+          "line": 35,
+          "script": "وبالجمله اهالی کمال سرور ایله یوللره دیزیلوب جمال همایون مشاهده سیله",
+          "transliteration": "ve bi'l-cümle ehâlî kemâl-i sürûr ile yollara dizilüb cemâl-i hümâyûn müşâhedesiyle",
+          "literal": "And altogether the people, with complete joy, on the roads lining up, with the imperial beauty's observation",
+          "modern": "And all the people lined up along the roads with complete joy, and by observing the imperial countenance,"
+        },
+        {
+          "line": 36,
+          "script": "کامیاب اولمشلردر کلیبولیدن محروسۀ ادرنه یه دك شوکتمآب افندیمز",
+          "transliteration": "kâmyâb olmuşlardır Gelibolu'dan maḥrûse-i Edirne'ye dek şevket-me'âb efendimiz",
+          "literal": "They became fulfilled; from Gallipoli to the protected Edirne until, our majesty-stationed master",
+          "modern": "They were gratified. From Gallipoli to the protected city of Edirne, His Majesty our Master"
+        },
+        {
+          "line": 37,
+          "script": "حضرتلرینك معاینه بیوردقلری بلاد مذکوره نك نائب واعیان و وجوهی",
+          "transliteration": "ḥażretleriniñ mu'âyene buyurduḳları bilâd-ı meżkûrenıñ nâ'ib ü a'yân ü vücûhı",
+          "literal": "His Majesty's inspected, the mentioned lands' deputies and notables and prominent persons",
+          "modern": "The deputies, notables, and leading figures of the mentioned lands that His Majesty inspected"
+        },
+        {
+          "line": 38,
+          "script": "یاز مشر ساعت محلدن ممنونا ومتشکرا قدوم شاهانه یی استقبال ایدوب",
+          "transliteration": "yarımşar sâ'at maḥalden memnûnen ü müteşekkiren ḳudûm-ı şâhâneyi istiḳbâl edüb",
+          "literal": "From half-hour places, gratefully and thankfully, the royal arrival welcoming",
+          "modern": "[Came] from places half an hour away, gratefully and thankfully welcoming the royal arrival,"
+        },
+        {
+          "line": 39,
+          "script": "هر بری فراجه وقوقلته خلعتلری الباسيله مکرم و هر بر محلده مسلم ورعایا",
+          "transliteration": "her biri ferâce ve ḳuḳuleta ḫil'atleri ilbâsıyla mükrem ve her bir maḥalde müslim ü re'âyâ",
+          "literal": "Each one, with ferâce and kukuleta robes of honor wearing, honored, and in each place Muslims and subjects",
+          "modern": "Each [official] was honored by being clothed in ferâce and kukuleta robes of honor. And in each place, Muslims and [non-Muslim] subjects—"
+        },
+        {
+          "line": 40,
+          "script": "هر نقدر فقرا وار ایسه دفتر اولنوب بدلرینه صدقات کثیره و بریلوب",
+          "transliteration": "her ne ḳadar fuḳarâ var ise defter olunub bedlerine ṣadaḳât-ı kes̱îre virilüb",
+          "literal": "However many poor there are, being registered, in their stead abundant alms being given",
+          "modern": "However many poor there were, they were registered and abundant alms were given on their behalf,"
+        },
+        {
+          "line": 41,
+          "script": "مظهر نوازش اتم اولدقلرندن بشقه دائرۀ پادشاهیده اولان بندگانك",
+          "transliteration": "maẓhar-ı nevâziş-i etemm olduḳlarından başḳa dâ'ire-i pâdişâhîde olan bendegânıñ",
+          "literal": "Recipients of the most complete favor being, besides, in the imperial household being, servants'",
+          "modern": "[They] being recipients of the most complete imperial favor. Besides [this], the servants in the imperial household's"
+        },
+        {
+          "line": 42,
+          "script": "نزول ایلدکلری قوناقلرك مأکولات مصارفی ینه دفتر اولنه رق مصار فلرندن",
+          "transliteration": "nüzûl eyledikleri ḳonaḳlarıñ me'kûlât maṣârifı yine defter olunaraḳ maṣariflerinden",
+          "literal": "Lodging they made, mansions' food expenses, again being registered, from their expenses",
+          "modern": "Food expenses of the mansions where they lodged were again registered, and [amounts] exceeding their expenses"
+        },
+        {
+          "line": 43,
+          "script": "افزون مبالغ اعطا اولنمشدر بوندن اقدم دوریجه اوه سی تعبیر اولنان",
+          "transliteration": "efzûn mebâliġ i'ṭâ olunmuşdur bundan aḳdem dörice evesi ta'bîr olunan",
+          "literal": "Exceeding amounts were given; before this, \"dörice house\" being called",
+          "modern": "Were given [to the mansion owners]. Previously, what was called the \"dörice house\"..."
+        }
+      ],
+      "summary": "Internal Affairs\n\nThe following matter concerns His Majesty our Padishah, Protector of Islam, possessed of majesty, power, and grandeur. With his benevolent intention of caring for his subjects, this is the special article describing the imperial journey to the Dardanelles and Edirne that took place several months ago, with which this newspaper has been auspiciously inaugurated.\n\nHis Majesty our Sovereign of fine conduct is characterized by his care for his subjects. Although news and the science of geography have informed His Imperial Majesty to some extent, following the principle that \"hearing is not like seeing,\" (His Majesty resolved) to observe with his own eyes—both the Muslim and non-Muslim subjects' conditions, and the fortifications and state of the imperial fortresses—with complete compassion. As an auspicious and unprecedented beginning, with humble condescension, His Majesty chose to burden his precious imperial person with travel, and to announce and demonstrate his inherent compassion as a sovereign to the poor.\n\nDeparting from Istanbul on the twenty-second of the noble month of Dhu'l-Hijja 1246 (May 22, 1831), which fell on a Friday, after performing the Friday prayer, His Majesty boarded the frigate named Şeref-resan (Honor-Bestowing) and departed for the Dardanelles with the Imperial Fleet. The fleet consisted of three ships-of-the-line, four frigates, four corvettes, one steamship, and two cutters—totaling fifteen vessels.\n\nHis Majesty stayed six days in Gallipoli and performed the Friday prayer at the Gazi Süleyman Pasha Mosque, led by the Second Imam of his royal retinue, Mustafa Nuri Efendi, one of the senior professors. After the prayer, he departed with the fleet for Kale-i Sultaniye (Çanakkale). After one week, leaving the Imperial Fleet at the strait, His Majesty traveled by steamship (back toward Edirne).\n\nOn the sixth of Muharram (1247), a Friday, after again performing the prayer, His Majesty returned to Gallipoli. On the seventh of the month, departing at dawn, he proceeded overland to Oreşe, Keşan, and Cisr-i Ergene, staying at the notables' mansions designated for his lodging. At the farm named Kara Kasım, three hours from Edirne, His Majesty spent one night.\n\nOn the eleventh (of Muharram), a Wednesday, His Majesty arrived at a place half an hour from Edirne. From the Solak Fountain, with a grand procession arranged in his honor, he proceeded toward the Selimiye Mosque. In its vicinity, at the mansion of the Grand Vizier's sword-bearer Raşid Ağa—which is new and pleasant and was designated as the imperial palace—His Majesty deigned to honor (with his presence).\n\nFrom the mentioned fountain, the Molla of Edirne and all the ulema and sheikhs prepared for the imperial reception. The schoolteachers with all their pupils, and the Greek, Armenian, and Jewish priests and rabbis with their children, wearing their ceremonial garments, stood along the royal road, raising their voices in prayer and praise. All the people lined up along the roads with complete joy, and by observing the imperial countenance, they were gratified.\n\nFrom Gallipoli to the protected city of Edirne, the deputies, notables, and leading figures of the lands that His Majesty inspected came from places half an hour away, gratefully and thankfully welcoming the royal arrival. Each official was honored by being clothed in ferâce and kukuleta robes of honor. In each place, however many poor Muslims and non-Muslim subjects there were, they were registered and abundant alms were given on their behalf—they being recipients of the most complete imperial favor.\n\nBesides this, the food expenses of the mansions where the servants of the imperial household lodged were registered, and amounts exceeding their expenses were given (to the mansion owners). Previously, what was called the \"dörice house\"...\n\n(Text continues on next column/page)"
+    },
+    "lh_column": {
+      "label": "Left-Hand Column",
+      "description": "Internal Affairs (continued)",
+      "xywh": [
+        2431,
+        703,
+        1010,
+        2797
+      ],
+      "lines": [
+        {
+          "line": 1,
+          "script": "محلك كافه اهاليسنه وقت وسعتده ناسه ويردكلری بها ايله ذخيره ويررك",
+          "transliteration": "maḥallıñ kâffe ehâlîsine vaḳt-i vüs'atde nâsa virdikleri behâ ile żaḫîre virürek",
+          "literal": "Of the locality's all inhabitants, in time of abundance to people they gave, price with, provisions giving",
+          "modern": "[The dörice house would] provide provisions to all the inhabitants of the locality at the price they [normally] gave to people in times of abundance,"
+        },
+        {
+          "line": 2,
+          "script": "ادا ايلملری اوزره اعطا بيوريلان سرمايه مثللو چرمن سنجاغنك حاوی",
+          "transliteration": "edâ eylemeleri üzere i'ṭâ buyurulan sermâye mis̱illü Çirmen sancaġınıñ ḥâvî",
+          "literal": "Performing they being, upon, given being commanded, capital like, Çirmen sanjak's containing",
+          "modern": "So that they would fulfill [this duty]. Similarly, to [the people of] the districts contained within the Çirmen Sanjak,"
+        },
+        {
+          "line": 3,
+          "script": "اولديغی قضالرك اهالی ورعايا سنه دخی اقتضا ايدن مبالغ كليه نك اعطاسنه",
+          "transliteration": "olduġı ḳażâlarıñ ehâlî ve re'âyâsına daḫi iḳtiżâ eden mebâliġ-i külliyenıñ i'ṭâsına",
+          "literal": "Being, districts' inhabitants and subjects to, also, requiring, substantial amounts' giving to",
+          "modern": "The capital that was bestowed [for this purpose], substantial amounts required [for their needs] were also given to the inhabitants and subjects of the districts,"
+        },
+        {
+          "line": 4,
+          "script": "اراده بيوريلوب مظهر دعا اولمشلردر كليبوليده نه مقدار مسجد و چشمه",
+          "transliteration": "irâde buyurulub maẓhar-ı du'â olmuşlardır Gelibolu'da ne miḳdâr mescid ü çeşme",
+          "literal": "Will being commanded, recipient of prayers they became; in Gallipoli how many mosques and fountains",
+          "modern": "[His Majesty] commanded [this], and they became recipients of [the people's] prayers. In Gallipoli, however many mosques and fountains"
+        },
+        {
+          "line": 5,
+          "script": "ومكتب وار ايسه انلرك وخيلی زماندنبرو يوللری بوزلمش صو يوللرينك",
+          "transliteration": "ve mekteb var ise anlarıñ ve ḫaylı zamândanberü yolları bozulmuş ṣu yollarınıñ",
+          "literal": "And schools there are if, their, and for a long time roads broken, water channels'",
+          "modern": "And schools there were, [for] their [repair], and for the water channels whose conduits had been broken for a long time,"
+        },
+        {
+          "line": 6,
+          "script": "تعميرينه اراده اولنوب مبارك مقاملو علی الخصوص بولايرده اولان غازی",
+          "transliteration": "ta'mîrine irâde olunub mübârek maḳâmlar 'ale'l-ḫuṣûṣ Bolayır'da olan Ġâzî",
+          "literal": "For repair will being made, blessed sites especially in Bolayır being, Gazi",
+          "modern": "Repair was ordered. Blessed sites [were visited], especially in Bolayır, the Gazi"
+        },
+        {
+          "line": 7,
+          "script": "سليمان پاشا تربه سی زيارت اولنوب تربه دارلرينه وفقرايه صدقه لر ويرلدی",
+          "transliteration": "Süleymân Paşa türbesi ziyâret olunub türbedârlarına ve fuḳarâya ṣadaḳalar virildi",
+          "literal": "Süleyman Pasha tomb visited being, to its tomb-keepers and to the poor, alms were given",
+          "modern": "Süleyman Pasha's tomb was visited, and alms were given to its tomb-keepers and to the poor."
+        },
+        {
+          "line": 8,
+          "script": "كليبولی وجوهی پادشاه دائره سنه بولايرده بدنلرندن بر عالی ضيافت ترتيبنی",
+          "transliteration": "Gelibolu vücûhı pâdişâh dâ'iresine Bolayır'da bedenllerinden bir 'âlî żiyâfet tertîbini",
+          "literal": "Gallipoli's notables, to the imperial retinue, in Bolayır from themselves, a grand banquet arrangement",
+          "modern": "The notables of Gallipoli [wished to arrange] a grand banquet at their own expense for the imperial retinue in Bolayır,"
+        },
+        {
+          "line": 9,
+          "script": "نياز ايتمشلر ايسه ده ضمننده اهل رعيته بلكه زحمت اولور مطالعه سيله",
+          "transliteration": "niyâz etmişler ise de żımnında ehl-i re'âyete belki zaḥmet olur müṭâla'asıyla",
+          "literal": "Entreated they had, although, in its midst, to the subject people perhaps burden it would be, consideration with",
+          "modern": "And they had entreated [for this], but with the consideration that it might perhaps be a burden to the common subjects,"
+        },
+        {
+          "line": 10,
+          "script": "تركنه اراده بيوريلوب بو وجهله دخی فقرانك راحتی نزد همايونلرنده",
+          "transliteration": "terkine irâde buyurulub bu vecihle daḫi fuḳarânıñ râḥatı nezd-i hümâyûnlarında",
+          "literal": "Its abandonment being ordered, in this way also the poor's comfort, in their imperial view",
+          "modern": "[His Majesty] ordered its abandonment. In this way also, [it was shown that] the comfort of the poor was [paramount] in His Imperial consideration."
+        },
+        {
+          "line": 11,
+          "script": "ملتزم اولديغنه اشارت اولنمشدر قلعه سلطانيه وكليد البحر وقوم قلعه",
+          "transliteration": "mültezem olduġına işâret olunmuşdur Ḳal'a-i Sulṭâniye ve Kilîdü'l-baḥr ve Ḳum Ḳal'a",
+          "literal": "Obligatory being to, indication was made; Sultaniye Fortress and Key of the Sea and Sand Fortress",
+          "modern": "An indication was made that [this] was obligatory [to him]. [He inspected] the Sultaniye Fortress, Kilid-ül-Bahr [Key of the Sea], Kum Kale [Sand Fortress],"
+        },
+        {
+          "line": 12,
+          "script": "وسد البحر قلعه لری ونعره بورنی واولحوا لبده بوندن اقدم اثر شاهانه لری",
+          "transliteration": "ve Seddü'l-baḥr ḳal'aları ve Na'ra Burnu ve ol ḥavâlîde bundan aḳdem es̱er-i şâhâneleri",
+          "literal": "And Barrier of the Sea fortresses and Nara Point and in those environs, before this, imperial works their",
+          "modern": "Sedd-ül-Bahr [Barrier of the Sea] fortresses, Nara Point, and in those environs—[including] the imperial works [built] before this [by His Majesty]—"
+        },
+        {
+          "line": 13,
+          "script": "اولان طابيه لر و بوزجه اطه نك قلعه سنك استحكاماتى معاينه وحتی كليد البحر",
+          "transliteration": "olan ṭâbiyeler ve Bozcaada'nıñ ḳal'asınıñ istiḥkâmâtı mu'âyene ve ḥattâ Kilîdü'l-baḥr",
+          "literal": "Being, bastions and Bozcaada's fortress's fortifications, inspection, and even Key of the Sea",
+          "modern": "The bastions, and the fortifications of Bozcaada's fortress were inspected. And even at Kilid-ül-Bahr"
+        },
+        {
+          "line": 14,
+          "script": "قلعه سنده كائن دردر قنطارلق دانه واوتوز التي وقيه باروتله اتيلان كبير",
+          "transliteration": "ḳal'asında kâ'in dörder ḳanṭârlıḳ dâne ve otuz altı vaḳıyye bârûtle atılan kebîr",
+          "literal": "In its fortress situated, four kantar each shot and thirty-six okka gunpowder with fired, large",
+          "modern": "Fortress, situated [there], the large [cannons] firing four-kantar shots each with thirty-six okka of gunpowder—"
+        },
+        {
+          "line": 15,
+          "script": "طوپلرك انداخته اراده بيوريلوب طوبجی باشي ونفرات هر نقدر كرنه يه",
+          "transliteration": "ṭoplarıñ endâḫtı irâde buyurulub ṭopçu başı ve neferât her ne ḳadar kerteye",
+          "literal": "Of cannons firing being ordered, artillery chief and soldiers however much to the notch",
+          "modern": "[His Majesty] ordered the firing of the cannons. The artillery chief and soldiers, however much they [aimed] at the notch [target],"
+        },
+        {
+          "line": 16,
+          "script": "المشلر ايسه ده مجلس عالی مهابتندن دقت اولنمامغله روی درياده وهله اوليده",
+          "transliteration": "almışlar ise de meclis-i 'âlî mehâbetinden diḳḳat olunmamaġla rû-yı deryâda ve hevle-i ûlâda",
+          "literal": "They had taken although, the exalted assembly's awe from, attention not being paid, on the sea's face and in the first attempt",
+          "modern": "Although they had [aimed], due to the awe of the exalted assembly [the Sultan's presence], [proper] attention was not paid; on the sea's surface, in the first attempt,"
+        },
+        {
+          "line": 17,
+          "script": "مأمول قدر سكمدكلری منظور پادشاهی اولوب كرته خصوصنده تعليم پادشاهيله",
+          "transliteration": "me'mûl ḳadar sekmedikeleri manẓûr-ı pâdişâhî olub kerte ḫuṣûṣında ta'lîm-i pâdişâhî ile",
+          "literal": "Expected as much they did not ricochet, imperial observation being, notch matter in, imperial instruction with",
+          "modern": "It was observed by His Majesty that [the shots] did not ricochet as expected. In the matter of the notch [aiming], with imperial instruction,"
+        },
+        {
+          "line": 18,
+          "script": "ينه اتلدقده طقوز كره دخی زياده سكوب قره ده دخی بش ارشون مقداری",
+          "transliteration": "yine atıldıḳda ṭoḳuz kerre daḫi ziyâde seküb ḳarada daḫi beş arşun miḳdârı",
+          "literal": "Again when fired, nine times also more ricocheting, on land also five arşun amount",
+          "modern": "When fired again, [the shots] ricocheted nine times more, and on land also penetrated about five arşun [approximately 3.5 meters]"
+        },
+        {
+          "line": 19,
+          "script": "يری تارومار ايلمشدر جمله قلاع ضابطانی و اماماری و خدمه سی اكتسای",
+          "transliteration": "yeri târümâr eylemişdir cümle ḳılâ' żâbiṭânı ve imâmları ve ḫademesi iktisâ-yı",
+          "literal": "The ground devastating it did; all fortresses' officers and imams and servants, clothing of",
+          "modern": "Devastating the ground. All the fortress officers, imams, and servants [received] the clothing of"
+        },
+        {
+          "line": 20,
+          "script": "خلعت و بذل عطيه ايله ممنون اولوب فقرای رعاياسی دخی نائل صدقات",
+          "transliteration": "ḫil'at ü beżl-i 'aṭıyye ile memnûn olub fuḳarâ-yı re'âyâsı daḫi nâ'il-i ṣadaḳât-ı",
+          "literal": "Robes of honor and bestowal of gifts with, gratified being, poor subjects also, attaining alms",
+          "modern": "Robes of honor and the bestowal of gifts, being gratified. The poor subjects also attained abundant"
+        },
+        {
+          "line": 21,
+          "script": "وفيره اولمشدر و محميۀ ادرنه ده اون كون اقامت بيوريلوب بو مدتده اولكی",
+          "transliteration": "vefîre olmuşdur ve maḥmiyye-i Edirne'de on gün iḳâmet buyurulub bu müddetde evvelki",
+          "literal": "Abundant became; and in protected Edirne ten days residence being commanded, in this period the first",
+          "modern": "Alms. And [His Majesty] resided in the protected [city of] Edirne for ten days. During this period, the first"
+        },
+        {
+          "line": 22,
+          "script": "جمعه يی سلطان سليم خان ثانی و ايكنجی جمعه يی اوچ شرفه لی جامع شريفلرنده",
+          "transliteration": "cum'ayı Sulṭân Selîm Ḫân-ı S̱ânî ve ikinci cum'ayı Üç Şerefeli câmi'-i şerîflerinde",
+          "literal": "Friday, Sultan Selim Khan the Second, and second Friday, Three-Balconied, noble mosques in",
+          "modern": "Friday [prayer was performed] at [the mosque of] Sultan Selim Khan II [Selimiye], and the second Friday at the Üç Şerefeli [Three-Balconied] noble mosques,"
+        },
+        {
+          "line": 23,
+          "script": "الای ايله عزيمت برله امام ثانی افندی يه بالاقتداء ادا بيورديلر و بعض مبارك",
+          "transliteration": "alây ile 'azîmet birle imâm-ı s̱ânî efendiye bi'l-iḳtidâ edâ buyurdılar ve ba'ż-ı mübârek",
+          "literal": "With procession, departure with, to the second imam efendi, by following, performance they commanded; and some blessed",
+          "modern": "[Going] with a procession, [His Majesty] performed [the prayers] following the Second Imam Efendi. And some blessed"
+        },
+        {
+          "line": 24,
+          "script": "مقامار زيارت و فقرا و درويشانه عطيه عنايت و استكشاف احوال ايچون",
+          "transliteration": "maḳâmlar ziyâret ü fuḳarâ ve dervîşâne 'aṭıyye 'inâyet ve istikşâf-ı aḥvâl içün",
+          "literal": "Sites visiting and to the poor and dervishes gifts granting, and investigation of conditions for",
+          "modern": "Sites [were] visited, and gifts were graciously bestowed upon the poor and dervishes. And for the investigation of conditions,"
+        },
+        {
+          "line": 25,
+          "script": "ايكی دفعه چرمن متصرفی حسين پاشا حضرتلرينك مريح و طونجه نهرلری",
+          "transliteration": "iki def'a Çirmen mutaṣarrıfı Ḥüseyn Paşa ḥażretleriniñ Merîç ve Ṭunca nehirleri",
+          "literal": "Two times, Çirmen governor Hüseyin Pasha His Excellency's, Maritsa and Tunca rivers",
+          "modern": "Twice, [His Majesty visited] the Çirmen Governor Hüseyin Pasha's [estate at] the Maritsa and Tunca rivers'"
+        },
+        {
+          "line": 26,
+          "script": "بركديكی محلده كائن باغچه لرينه و بر دفعه طاغد ويران زاده قدری بكك طونجه",
+          "transliteration": "birikdiği maḥalde kâ'in bâġçelerine ve bir def'a Ṭâġdevîrân-zâde Ḳadrî Beg'iñ Ṭunca",
+          "literal": "Converging place in situated, gardens to, and one time Tağdeviran-zade Kadri Bey's Tunca",
+          "modern": "Confluence, situated gardens. And once to Tağdeviran-zade Kadri Bey's [garden] on the Tunca"
+        },
+        {
+          "line": 27,
+          "script": "كنارنده اولان باغچه سنه عزيمت بيورلدی ادرنه يه دخولك ايرته سی كونی",
+          "transliteration": "kenârında olan bâġçesine 'azîmet buyuruldı Edirne'ye duḫûlüñ ertesi günü",
+          "literal": "On its bank being, garden to, departure was commanded; to Edirne entry's next day",
+          "modern": "River bank's garden, [His Majesty] departed [to visit]. The day after entering Edirne,"
+        },
+        {
+          "line": 28,
+          "script": "اثار پادشاهانه لرندن اولان عساكر منصوره قشله سنی تشريف وقتله نك",
+          "transliteration": "âs̱âr-ı pâdişâhânelerinden olan 'asâkir-i manṣûre ḳışlasını teşrîf ve ḳışlanıñ",
+          "literal": "Imperial works their from being, Mansure soldiers' barracks honoring, and the barracks'",
+          "modern": "[His Majesty] honored the Mansure [Victorious] Soldiers' barracks—which is among his imperial works—and the barracks'"
+        },
+        {
+          "line": 29,
+          "script": "جوانب اربعه سنی محل بمحل نكاه وجامع شريفنه دخول و اول مأوانك اسلوب",
+          "transliteration": "cevânib-i erba'asını maḥal be-maḥal nigâh ve câmi'-i şerîfine duḫûl ve ol me'vânıñ üslûb",
+          "literal": "Four sides, place by place viewing, and its noble mosque entering, and that shelter's style",
+          "modern": "Four sides, place by place, [were] viewed, and [His Majesty] entered its noble mosque. And that edifice's style"
+        },
+        {
+          "line": 30,
+          "script": "ومتانتنی انتخاب بيورمشلردر موجود اولان عساكر دخی طابور طابور",
+          "transliteration": "ve metânetini intiḫâb buyurmuşlardır mevcûd olan 'asâkir daḫi ṭâbûr ṭâbûr",
+          "literal": "And solidity, approval they commanded; present being soldiers also, battalion by battalion",
+          "modern": "And solidity were approved by [His Majesty]. The soldiers present also [stood] battalion by battalion,"
+        },
+        {
+          "line": 31,
+          "script": "طوروب ميانلرندن كچه رك هر برينك لباس و احوالی وكفياتلرينه بالذات وقوف",
+          "transliteration": "ṭurub miyânlarından geçerek her biriniñ libâs ü aḥvâlı ve keyfiyâtlarına bi'ẕ-ẕât vuḳûf-ı",
+          "literal": "Standing, through their midst passing, each one's clothing and conditions and states to, in person awareness",
+          "modern": "And standing, passing through their midst, [His Majesty gained] personal awareness of each one's clothing, conditions, and states—"
+        },
+        {
+          "line": 32,
+          "script": "شاهانه همت و ضابطلرينی بركونه التفاتله مظهر عنايت و دائما مالزمه لری اماده",
+          "transliteration": "şâhâne himmet ü żâbiṭlarını bir gûne iltifâtle maẓhar-ı 'inâyet ve dâ'imâ mülâzemeleri âmâde",
+          "literal": "Imperial endeavor, and their officers, a kind of favor with, recipient of grace, and always their supplies prepared",
+          "modern": "Imperial endeavor—and [made] their officers recipients of a kind favor and grace. And that their supplies always be prepared"
+        },
+        {
+          "line": 33,
+          "script": "اولمسی مطلوب همايونلری اولديغنی معيت شاهانه ايله كلان فريق خاصه",
+          "transliteration": "olması maṭlûb-ı hümâyûnları olduġını ma'iyyet-i şâhâne ile gelen ferîḳ-i ḫâṣṣa",
+          "literal": "Being, imperial desire their being, with the imperial retinue coming, special division",
+          "modern": "Was His Imperial desire, [this] being [conveyed to] the Special Division commander who came with the imperial retinue—"
+        },
+        {
+          "line": 34,
+          "script": "بكلر بكباسی احمد پاشايه اوراده علنا اراده برله عساكری تلطيف بيورديلمر",
+          "transliteration": "beglerbegisi Aḥmed Paşa'ya orada 'alenen irâde birle 'asâkiri telṭîf buyurdular",
+          "literal": "Governor-general Ahmed Pasha to, there openly, order with, soldiers kindness they commanded",
+          "modern": "Governor-General Ahmed Pasha—there openly [His Majesty] ordered, showing kindness to the soldiers."
+        },
+        {
+          "line": 35,
+          "script": "خسته خانه نك احوالنه دخی بالذات اطلاعله دوام انتظامنی موجب اوله جق",
+          "transliteration": "ḫaste-ḫânenıñ aḥvâline daḫi bi'ẕ-ẕât ıṭṭılâ' ile devâm-ı intiẓâmını mûcib olacaḳ",
+          "literal": "Hospital's conditions to also, in person information with, continuation of order causing will be",
+          "modern": "[His Majesty] also personally [gained] information about the hospital's conditions, [ordering] matters that would ensure the continuation of order—"
+        },
+        {
+          "line": 36,
+          "script": "امورك تسويه سنی احمد پاشا ايله ينه معيت همايونده اولان حكيم باشی دادری",
+          "transliteration": "umûruñ tesviyesini Aḥmed Paşa ile yine ma'iyyet-i hümâyûnda olan ḥekîm başı ṭâdırı",
+          "literal": "Matters' settlement, Ahmed Pasha with, again in the imperial retinue being, chief physician deputy",
+          "modern": "The settlement of matters [was entrusted to] Ahmed Pasha, and also to the deputy chief physician who was in the imperial retinue—"
+        },
+        {
+          "line": 37,
+          "script": "مكه مكرمه معزوللرندن طبيب خاصه عبدالحق افندی يه تأكيد برله شفاساز",
+          "transliteration": "Mekke-i Mükerreme ma'zûllerinden ṭabîb-i ḫâṣṣa 'Abdülḥaḳḳ Efendi'ye te'kîd birle şifâ-sâz-ı",
+          "literal": "Mecca the Honored's former [officials] from, special physician Abdülhak Efendi to, emphasis with, healing-maker of",
+          "modern": "[One of] the former [officials] of Mecca the Honored, the Special Physician Abdülhak Efendi—with emphasis, [being] a healer of"
+        },
+        {
+          "line": 38,
+          "script": "رأفت اولوب تعمير و تجديدينه دخی اراده بيورديلر و مريح اوزرنده اولوب بوندن",
+          "transliteration": "ra'fet olub ta'mîr ü tecdîdine daḫi irâde buyurdılar ve Merîç üzerinde olub bundan",
+          "literal": "Compassion being, repair and renewal to also, order they commanded; and on the Maritsa being, from this",
+          "modern": "Compassion—and [His Majesty] also ordered [the hospital's] repair and renewal. And on the Maritsa [River], from before this,"
+        },
+        {
+          "line": 39,
+          "script": "اقدم جريان سيلدن ييقلان بيوك كپرينك تجديدينه اراده بيوريلوب خلق",
+          "transliteration": "aḳdem cereyân-ı seylden yıḳılan büyük köprünıñ tecdîdine irâde buyurulub ḫalḳ",
+          "literal": "Before, flood's current from collapsed, great bridge's renewal to, order was commanded; people",
+          "modern": "The great bridge that had collapsed from the flood current previously—its renewal was ordered [by His Majesty]. The people,"
+        },
+        {
+          "line": 40,
+          "script": "قايقلرله كلوب كچمکده چكدكلری مشقتدن قورتيلوب دوام دولتلری دعاسنه",
+          "transliteration": "ḳayıḳlarla gelüb geçmekde çekdikleri meşaḳḳatden ḳurtulub devâm-ı devletleri du'âsına",
+          "literal": "With boats coming and passing, they endured, hardship from, saved being, continuation of their state, prayer to",
+          "modern": "Coming and going by boats, [were] saved from the hardship they endured, [and they became] devoted to praying for the continuation of [His Majesty's] state."
+        },
+        {
+          "line": 41,
+          "script": "مشغول اولديلر شرف معيت همايونله مستسعد اولان بندكانك هر بری محميه",
+          "transliteration": "meşġûl oldılar şeref-i ma'iyyet-i hümâyûn ile müsta'sid olan bendegânıñ her biri maḥmiyye-i",
+          "literal": "Occupied they became; honor of imperial retinue with, felicitous being, servants' each one, protected",
+          "modern": "They became occupied [with prayers]. Each one of the servants who were felicitous with the honor of the imperial retinue, [departing from] the protected"
+        },
+        {
+          "line": 42,
+          "script": "مزبوره دن اثنای حركت همايونده نائل نصاب عطايا اوله رق دعوات",
+          "transliteration": "mezbûreden es̱nâ-yı ḥareket-i hümâyûnda nâ'il-i niṣâb-ı 'aṭâyâ olarak da'avât-ı",
+          "literal": "Aforementioned from, during imperial movement, attaining share of gifts being, prayers",
+          "modern": "[City of Edirne] mentioned, during the imperial movement [departure], attaining their share of gifts, [offered] prayers of"
+        },
+        {
+          "line": 43,
+          "script": "خيريه پادشاهیی مسرورا ايفا ايلديلر محميۀ ادرنه يه تشريف عالی ی يادوتذكار",
+          "transliteration": "ḫayriyye-i pâdişâhîyi mesrûren îfâ eylediler maḥmiyye-i Edirne'ye teşrîf-i 'âlîyi yâd ü teẕkâr",
+          "literal": "Beneficent imperial, joyfully performing they did; to protected Edirne, exalted honoring, remembrance and commemoration",
+          "modern": "Beneficence for His Majesty, joyfully performing [them]. The exalted honoring [visit] to the protected [city of] Edirne [is hereby] remembered and commemorated..."
+        }
+      ],
+      "summary": "(Continuation from RH Column)\n\n...Previously, what was called the \"dörice house\" (would) provide provisions to all the inhabitants of the locality at the price given in times of abundance, so that they would fulfill this duty. Similarly, substantial amounts required were given to the inhabitants and subjects of the districts within the Çirmen Sanjak. (His Majesty) commanded (this), and they became recipients of (the people's) prayers.\n\nIn Gallipoli, however many mosques, fountains, and schools there were, their repair was ordered, along with the water channels whose conduits had been broken for a long time. Blessed sites were visited, especially in Bolayır, where Gazi Süleyman Pasha's tomb was visited, and alms were given to its tomb-keepers and to the poor.\n\nThe notables of Gallipoli wished to arrange a grand banquet at their own expense for the imperial retinue in Bolayır, but with the consideration that it might burden the common subjects, (His Majesty) ordered its abandonment. In this way, it was shown that the comfort of the poor was paramount in His Imperial consideration.\n\n(His Majesty inspected) the Sultaniye Fortress, Kilid-ül-Bahr (Key of the Sea), Kum Kale (Sand Fortress), Sedd-ül-Bahr (Barrier of the Sea) fortresses, Nara Point, and in those environs—including the imperial bastions (built previously by His Majesty)—and the fortifications of Bozcaada's fortress. At Kilid-ül-Bahr Fortress, (His Majesty) ordered the firing of the large cannons—each firing four-kantar shots with thirty-six okka of gunpowder. The artillery chief and soldiers, although they aimed at the notch (target), due to the awe of the exalted assembly (the Sultan's presence), proper attention was not paid. On the sea's surface, in the first attempt, it was observed by His Majesty that the shots did not ricochet as expected. With imperial instruction regarding the aiming, when fired again, the shots ricocheted nine times more and penetrated about five arşun (approximately 3.5 meters) into the ground, devastating it.\n\nAll the fortress officers, imams, and servants received robes of honor and gifts, being gratified. The poor subjects also attained abundant alms.\n\n(His Majesty) resided in the protected city of Edirne for ten days. During this period, the first Friday (prayer was performed) at Sultan Selim Khan II's (Selimiye Mosque), and the second Friday at the Üç Şerefeli (Three-Balconied Mosque), going with a procession and performing the prayers following the Second Imam Efendi. Some blessed sites were visited, and gifts were graciously bestowed upon the poor and dervishes.\n\nFor the investigation of conditions, (His Majesty visited) twice the Çirmen Governor Hüseyin Pasha's gardens situated at the confluence of the Maritsa and Tunca rivers, and once Tağdeviran-zade Kadri Bey's garden on the Tunca riverbank.\n\nThe day after entering Edirne, (His Majesty) honored the Mansure (Victorious) Soldiers' barracks—which is among his imperial works—viewing its four sides place by place, and entering its noble mosque. The edifice's style and solidity were approved. The soldiers present stood battalion by battalion, and passing through their midst, (His Majesty gained) personal awareness of each one's clothing, conditions, and states—with imperial endeavor making their officers recipients of favor and grace. That their supplies always be prepared was His Imperial desire, (this being conveyed) to Governor-General Ahmed Pasha, commander of the Special Division who came with the imperial retinue. There, openly, (His Majesty) ordered, showing kindness to the soldiers.\n\n(His Majesty) also personally gained information about the hospital's conditions, ordering matters to ensure the continuation of order. The settlement of matters was entrusted to Ahmed Pasha and to the deputy chief physician—one of the former officials of Mecca the Honored, the Special Physician Abdülhak Efendi—with emphasis on healing and compassion. And (His Majesty) also ordered the hospital's repair and renewal.\n\nOn the Maritsa River, the great bridge that had collapsed from the flood current previously—its renewal was ordered. The people, coming and going by boats, were saved from the hardship they endured, and became devoted to praying for the continuation of His Majesty's state.\n\nEach one of the servants who were felicitous with the honor of the imperial retinue, departing from the protected city of Edirne during the imperial movement, attained their share of gifts and joyfully offered prayers of beneficence for His Majesty. The exalted visit to the protected city of Edirne is hereby remembered and commemorated...\n\n(Text continues on next page)"
+    }
+  },
+  "canvas": {
+    "width": 5000,
+    "height": 3491
+  },
+  "image_service": "https://ai-and-history-collaboratory.github.io/iiif-demo/images/takvim-i-vekayi-1831"
+}
