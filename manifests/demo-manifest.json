@@ -75,6 +75,12 @@
             }
           ]
         }
+      ],
+      "annotations": [
+        {
+          "id": "https://ai-and-history-collaboratory.github.io/iiif-demo/annotations/takvim-annotations.json",
+          "type": "AnnotationPage"
+        }
       ]
     }
   ]
