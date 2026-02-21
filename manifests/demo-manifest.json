@@ -79,7 +79,45 @@
       "annotations": [
         {
           "id": "https://ai-and-history-collaboratory.github.io/iiif-demo/annotations/takvim-annotations.json",
-          "type": "AnnotationPage"
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://ai-and-history-collaboratory.github.io/iiif-demo/annotations/takvim-masthead",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "format": "text/html",
+                "language": "en",
+                "value": "<div style='font-family: serif; line-height: 1.6;'><h3>Masthead</h3><table style='border-collapse: collapse; width: 100%; margin-bottom: 1em;'><tr style='border-bottom: 1px solid #ccc;'><td style='padding: 4px 8px; font-weight: bold; vertical-align: top; width: 140px;'>Original Script</td><td style='padding: 4px 8px; direction: rtl; font-size: 1.1em;'>تقویم وقایع</td></tr><tr style='border-bottom: 1px solid #ccc;'><td style='padding: 4px 8px; font-weight: bold; vertical-align: top;'>Transliteration</td><td style='padding: 4px 8px; font-style: italic;'>Taḳvîm-i Veḳâyi'</td></tr><tr style='border-bottom: 1px solid #ccc;'><td style='padding: 4px 8px; font-weight: bold; vertical-align: top;'>Literal English</td><td style='padding: 4px 8px;'>Calendar of Events</td></tr><tr><td style='padding: 4px 8px; font-weight: bold; vertical-align: top;'>Modernized English</td><td style='padding: 4px 8px;'>Calendar of Events [Official Ottoman Gazette]</td></tr></table><p><strong>Publication details:</strong></p><table style='border-collapse: collapse; width: 100%; margin-bottom: 1em;'><tr style='border-bottom: 1px solid #ccc;'><td style='padding: 4px 8px; direction: rtl;'>دفعه ١</td><td style='padding: 4px 8px; font-style: italic;'>Def'a 1</td><td style='padding: 4px 8px;'>Issue 1</td></tr><tr style='border-bottom: 1px solid #ccc;'><td style='padding: 4px 8px; direction: rtl;'>شروع فی جا ٢٥</td><td style='padding: 4px 8px; font-style: italic;'>Şürû' fî Cumâde'l-âḫir 25</td><td style='padding: 4px 8px;'>Commencing 25 Jumada al-Akhir</td></tr><tr><td style='padding: 4px 8px; direction: rtl;'>١٢٤٧ سنه</td><td style='padding: 4px 8px; font-style: italic;'>1247 Sene</td><td style='padding: 4px 8px;'>Year 1247 AH [1 November 1831 CE]</td></tr></table><p style='font-size: 0.85em; color: #666;'>First issue of the first official Ottoman government gazette, published during the reign of Sultan Mahmud II (r. 1808–1839) in the early Tanzimat reform period.</p><p style='font-size: 0.8em; color: #999;'>Transliteration and translation by Claude Opus 4.5, December 2025</p></div>"
+              },
+              "target": "https://ai-and-history-collaboratory.github.io/iiif-demo/manifests/canvas/takvim#xywh=2550,80,2250,580"
+            },
+            {
+              "id": "https://ai-and-history-collaboratory.github.io/iiif-demo/annotations/takvim-rh-column",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "format": "text/html",
+                "language": "en",
+                "value": "<div style='font-family: serif; line-height: 1.6;'><h3>Right-Hand Column: Internal Affairs</h3><table style='border-collapse: collapse; width: 100%; margin-bottom: 1em;'><tr style='border-bottom: 1px solid #ccc;'><td style='padding: 4px 8px; font-weight: bold; vertical-align: top; width: 140px;'>Original Script</td><td style='padding: 4px 8px; direction: rtl; font-size: 1.1em;'>❁ امور داخلیه ❁</td></tr><tr style='border-bottom: 1px solid #ccc;'><td style='padding: 4px 8px; font-weight: bold; vertical-align: top;'>Transliteration</td><td style='padding: 4px 8px; font-style: italic;'>Umûr-ı Dâḫiliye</td></tr><tr style='border-bottom: 1px solid #ccc;'><td style='padding: 4px 8px; font-weight: bold; vertical-align: top;'>Literal English</td><td style='padding: 4px 8px;'>Affairs of Internal [Matters]</td></tr><tr><td style='padding: 4px 8px; font-weight: bold; vertical-align: top;'>Modernized English</td><td style='padding: 4px 8px;'>Internal Affairs</td></tr></table><h4>Summary Translation</h4><p>The following matter concerns His Majesty our Padishah, Protector of Islam, possessed of majesty, power, and grandeur. This is the special article describing the imperial journey to the Dardanelles and Edirne that took place several months ago, with which this newspaper has been auspiciously inaugurated.</p><p>Following the principle that &ldquo;hearing is not like seeing,&rdquo; His Majesty resolved to observe with his own eyes both the Muslim and non-Muslim subjects' conditions, and the fortifications and state of the imperial fortresses.</p><p>Departing from Istanbul on May 22, 1831, His Majesty boarded the frigate Şeref-resan [Honor-Bestowing] and departed for the Dardanelles with the Imperial Fleet of fifteen vessels. He stayed six days in Gallipoli, then departed for Kale-i Sultaniye [Çanakkale].</p><p>Proceeding overland to Oreşe, Keşan, and Cisr-i Ergene, His Majesty arrived at Edirne with a grand procession. The Molla of Edirne and all the ulema and sheikhs, schoolteachers with their pupils, and the Greek, Armenian, and Jewish priests and rabbis with their children, wearing ceremonial garments, stood along the royal road raising their voices in prayer and praise.</p><p>Each official was honored with ferâce and kukuleta robes. The poor were registered and given abundant alms.</p><p style='font-style: italic; color: #666;'>[Continues in left-hand column]</p><p style='font-size: 0.8em; color: #999;'>43 lines. Claude Opus 4.5, December 2025</p></div>"
+              },
+              "target": "https://ai-and-history-collaboratory.github.io/iiif-demo/manifests/canvas/takvim#xywh=3650,660,1150,2600"
+            },
+            {
+              "id": "https://ai-and-history-collaboratory.github.io/iiif-demo/annotations/takvim-lh-column",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "format": "text/html",
+                "language": "en",
+                "value": "<div style='font-family: serif; line-height: 1.6;'><h3>Left-Hand Column: Internal Affairs (continued)</h3><table style='border-collapse: collapse; width: 100%; margin-bottom: 1em;'><tr style='border-bottom: 1px solid #ccc;'><td style='padding: 4px 8px; font-weight: bold; vertical-align: top; width: 140px;'>Original Script</td><td style='padding: 4px 8px; direction: rtl; font-size: 1.1em;'>❁ امور داخلیه ❁ (تتمه)</td></tr><tr style='border-bottom: 1px solid #ccc;'><td style='padding: 4px 8px; font-weight: bold; vertical-align: top;'>Transliteration</td><td style='padding: 4px 8px; font-style: italic;'>Umûr-ı Dâḫiliye (tetimme)</td></tr><tr style='border-bottom: 1px solid #ccc;'><td style='padding: 4px 8px; font-weight: bold; vertical-align: top;'>Literal English</td><td style='padding: 4px 8px;'>Affairs of Internal [Matters] (continuation)</td></tr><tr><td style='padding: 4px 8px; font-weight: bold; vertical-align: top;'>Modernized English</td><td style='padding: 4px 8px;'>Internal Affairs (continued)</td></tr></table><h4>Summary Translation</h4><p>In Gallipoli, repair of mosques, fountains, schools, and water channels was ordered. Gazi Süleyman Pasha's tomb in Bolayır was visited, and alms given to tomb-keepers and the poor.</p><p>His Majesty inspected the Sultaniye Fortress, Kilid-ül-Bahr, Kum Kale, Sedd-ül-Bahr, and Bozcaada. At Kilid-ül-Bahr, large cannons were fired&mdash;with imperial instruction, the shots ricocheted nine times and penetrated five arşun into the ground.</p><p>His Majesty resided in Edirne for ten days. Friday prayers were performed at the Selimiye and Üç Şerefeli mosques. He honored the Mansure Soldiers' barracks, passing through the battalions and personally inspecting each soldier's conditions.</p><p>The hospital's repair and renewal was ordered. The great bridge on the Maritsa that had collapsed from flooding&mdash;its renewal was ordered.</p><p>The exalted visit to Edirne is hereby remembered and commemorated...</p><p style='font-style: italic; color: #666;'>[Text continues on next page]</p><p style='font-size: 0.8em; color: #999;'>43 lines. Claude Opus 4.5, December 2025</p></div>"
+              },
+              "target": "https://ai-and-history-collaboratory.github.io/iiif-demo/manifests/canvas/takvim#xywh=2500,660,1100,2600"
+            }
+          ]
         }
       ]
     }
