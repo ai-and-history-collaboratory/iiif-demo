@@ -343,84 +343,81 @@ body {
     background: #457b9d;
 }
 
-/* Credits badge */
-.credits-badge {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    z-index: 100;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: rgba(20, 20, 20, 0.85);
-    border: 1px solid #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Credits inline (sidebar header) */
+.credits-inline {
+    font-size: 11px;
+    color: #666;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #2a2a2a;
     cursor: pointer;
-    transition: all 0.2s;
-    backdrop-filter: blur(8px);
 }
 
-.credits-badge:hover {
-    background: rgba(40, 40, 40, 0.95);
-    border-color: #457b9d;
+.credits-inline strong {
+    color: #999;
 }
 
-.credits-icon {
-    font-size: 16px;
-    color: #888;
+.credits-expand {
+    font-size: 9px;
+    color: #555;
+    margin-left: 4px;
+    transition: transform 0.2s;
+    display: inline-block;
 }
 
-.credits-badge:hover .credits-icon {
-    color: #ccc;
+.credits-expand.open {
+    transform: rotate(180deg);
 }
 
-.credits-panel {
-    position: absolute;
-    top: 50px;
-    left: 12px;
-    z-index: 100;
-    background: rgba(20, 20, 20, 0.95);
-    border: 1px solid #333;
-    border-radius: 8px;
-    padding: 14px 18px;
-    backdrop-filter: blur(12px);
+.credits-detail {
+    font-size: 10px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 6px;
     display: none;
-    min-width: 240px;
 }
 
-.credits-panel.visible {
+.credits-detail.visible {
     display: block;
 }
 
-.credits-title {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #666;
-    margin-bottom: 8px;
-}
-
-.credits-line {
+/* Sidebar collapse toggle */
+.sidebar-toggle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 50;
+    width: 20px;
+    height: 48px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
     font-size: 12px;
-    color: #bbb;
-    line-height: 1.6;
+    transition: all 0.2s;
 }
 
-.credits-line strong {
+.sidebar-toggle:hover {
+    background: #252525;
     color: #fff;
+    border-color: #457b9d;
 }
 
-.credits-sep {
-    height: 1px;
-    background: #333;
-    margin: 8px 0;
+.sidebar.collapsed {
+    width: 0 !important;
+    min-width: 0 !important;
+    overflow: hidden;
+    border-right: none;
 }
 
-.credits-small {
-    font-size: 11px;
-    color: #666;
+.sidebar.collapsed + .resize-handle {
+    display: none;
 }
 
 /* Mobile */
@@ -449,6 +446,14 @@ body {
         <div class="sidebar-header">
             <h1>Takvim-i Vekayi, No. 1</h1>
             <div class="subtitle">1 November 1831 (25 Jumada al-Akhir 1247 AH)</div>
+            <div class="credits-inline" id="creditsInline">
+                Built with <strong>Claude Cowork</strong> (Opus 4.6) &middot; OpenSeadragon &middot; IIIF
+                <span class="credits-expand" id="creditsExpand" title="More details">&#9660;</span>
+            </div>
+            <div class="credits-detail" id="creditsDetail">
+                <div>Tiles: iiif_static (Python) &middot; HTR: V3-S-Minimal + Claude Opus 4.5</div>
+                <div>AI + History Collaboratory, February 2026</div>
+            </div>
         </div>
 
         <div class="layer-controls">
@@ -472,6 +477,11 @@ body {
                 <input type="checkbox" checked>
                 <span class="layer-swatch" style="background: #e9c46a; color: #e9c46a;"></span>
                 <span class="layer-label">Modernized English</span>
+            </label>
+            <label class="layer-toggle" data-layer="summary">
+                <input type="checkbox" checked>
+                <span class="layer-swatch" style="background: #a78bfa; color: #a78bfa;"></span>
+                <span class="layer-label">Summary Translation</span>
             </label>
         </div>
 
@@ -504,28 +514,13 @@ body {
     <!-- Viewer -->
     <div class="viewer-area">
         <div id="osd-viewer"></div>
-        <div class="credits-badge" id="creditsBadge" title="Click for build details">
-            <span class="credits-icon">&#x2699;</span>
-        </div>
-        <div class="credits-panel" id="creditsPanel">
-            <div class="credits-content">
-                <div class="credits-title">Built with</div>
-                <div class="credits-line"><strong>Claude Cowork</strong> (Opus 4.6)</div>
-                <div class="credits-line">OpenSeadragon &middot; IIIF Image API 2.1</div>
-                <div class="credits-line">Tiles: iiif_static (Python)</div>
-                <div class="credits-line">HTR: V3-S-Minimal + Claude Opus 4.5</div>
-                <div class="credits-sep"></div>
-                <div class="credits-line credits-small">AI + History Collaboratory, Feb 2026</div>
-            </div>
-        </div>
+        <div class="sidebar-toggle" id="sidebarToggle" title="Toggle annotations panel">&#x25C0;</div>
         <div class="info-bar">
             <span>AI + History Collaboratory &mdash; IIIF Demo</span>
             <span>
                 <a href="https://github.com/ai-and-history-collaboratory/iiif-demo" target="_blank">GitHub</a>
                 &nbsp;&middot;&nbsp;
                 <a href="https://ai-and-history-collaboratory.github.io/iiif-demo/manifests/demo-manifest.json" target="_blank">IIIF Manifest</a>
-                &nbsp;&middot;&nbsp;
-                <a href="https://projectmirador.org/demo" target="_blank">Open in Mirador</a>
             </span>
         </div>
     </div>
@@ -552,7 +547,7 @@ const LAYER_TAGS = {
 // --- State ---
 let viewer = null;
 let activeRegion = null;
-let visibleLayers = { script: true, transliteration: true, literal: true, modern: true };
+let visibleLayers = { script: true, transliteration: true, literal: true, modern: true, summary: true };
 let overlays = {};
 
 // --- Initialize OpenSeadragon ---
@@ -589,6 +584,14 @@ function initViewer() {
 
     viewer.addHandler('open', function() {
         addRegionOverlays();
+    });
+
+    // Right-click to zoom out
+    const osdEl = document.getElementById('osd-viewer');
+    osdEl.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        viewer.viewport.zoomBy(0.667);  // zoom out ~33%
+        viewer.viewport.applyConstraints();
     });
 }
 
@@ -683,9 +686,10 @@ function renderAnnotations(regionKey) {
         html += '</div>';
     });
 
-    // Add summary
+    // Add summary (togglable as fifth layer)
     if (region.summary) {
-        html += '<div class="summary-section">';
+        const summaryHidden = !visibleLayers.summary ? ' hidden' : '';
+        html += `<div class="summary-section${summaryHidden}" data-layer="summary">`;
         html += '<h4>Summary Translation</h4>';
         // Split summary into paragraphs
         const paragraphs = region.summary.split('\n\n');
@@ -715,8 +719,8 @@ function setupLayerToggles() {
         checkbox.addEventListener('change', function() {
             visibleLayers[layer] = this.checked;
 
-            // Update all visible layer lines
-            document.querySelectorAll(`.layer-line[data-layer="${layer}"]`).forEach(el => {
+            // Update all visible layer lines and summary sections
+            document.querySelectorAll(`[data-layer="${layer}"]`).forEach(el => {
                 el.classList.toggle('hidden', !this.checked);
             });
         });
@@ -760,22 +764,29 @@ function setupResize() {
     });
 }
 
-// --- Credits badge ---
+// --- Credits inline expand ---
 function setupCredits() {
-    const badge = document.getElementById('creditsBadge');
-    const panel = document.getElementById('creditsPanel');
+    const inline = document.getElementById('creditsInline');
+    const detail = document.getElementById('creditsDetail');
+    const expand = document.getElementById('creditsExpand');
 
-    badge.addEventListener('click', function(e) {
-        e.stopPropagation();
-        panel.classList.toggle('visible');
+    inline.addEventListener('click', function() {
+        detail.classList.toggle('visible');
+        expand.classList.toggle('open');
     });
+}
 
-    document.addEventListener('click', function() {
-        panel.classList.remove('visible');
-    });
+// --- Sidebar collapse/expand ---
+function setupSidebarToggle() {
+    const toggle = document.getElementById('sidebarToggle');
+    const sidebar = document.getElementById('sidebar');
+    const handle = document.getElementById('resizeHandle');
 
-    panel.addEventListener('click', function(e) {
-        e.stopPropagation();
+    toggle.addEventListener('click', function() {
+        const isCollapsed = sidebar.classList.toggle('collapsed');
+        handle.style.display = isCollapsed ? 'none' : '';
+        toggle.innerHTML = isCollapsed ? '&#x25B6;' : '&#x25C0;';
+        toggle.title = isCollapsed ? 'Show annotations panel' : 'Hide annotations panel';
     });
 }
 
@@ -786,6 +797,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupRegionButtons();
     setupResize();
     setupCredits();
+    setupSidebarToggle();
 });
 </script>
 
