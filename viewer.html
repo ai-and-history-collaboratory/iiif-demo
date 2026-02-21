@@ -201,6 +201,10 @@ body {
     border-left: 3px solid #333;
 }
 
+.line-block.all-hidden {
+    display: none;
+}
+
 .line-number {
     font-size: 11px;
     font-weight: 600;
@@ -217,7 +221,8 @@ body {
     transition: opacity 0.2s;
 }
 
-.layer-line.hidden {
+.layer-line.hidden,
+.summary-section.hidden {
     display: none;
 }
 
@@ -346,7 +351,7 @@ body {
 /* Credits inline (sidebar header) */
 .credits-inline {
     font-size: 11px;
-    color: #666;
+    color: #aaa;
     margin-top: 8px;
     padding-top: 8px;
     border-top: 1px solid #2a2a2a;
@@ -354,12 +359,12 @@ body {
 }
 
 .credits-inline strong {
-    color: #999;
+    color: #ddd;
 }
 
 .credits-expand {
     font-size: 9px;
-    color: #555;
+    color: #999;
     margin-left: 4px;
     transition: transform 0.2s;
     display: inline-block;
@@ -371,7 +376,7 @@ body {
 
 .credits-detail {
     font-size: 10px;
-    color: #555;
+    color: #999;
     line-height: 1.6;
     margin-top: 6px;
     display: none;
@@ -418,6 +423,21 @@ body {
 
 .sidebar.collapsed + .resize-handle {
     display: none;
+}
+
+/* Fullscreen mode — ensure sidebar toggle and sidebar work */
+.app:-webkit-full-screen,
+.app:-moz-full-screen,
+.app:fullscreen {
+    width: 100vw;
+    height: 100vh;
+    background: #0a0a0a;
+}
+
+.app:-webkit-full-screen .sidebar-toggle,
+.app:-moz-full-screen .sidebar-toggle,
+.app:fullscreen .sidebar-toggle {
+    z-index: 9999;
 }
 
 /* Mobile */
@@ -586,6 +606,24 @@ function initViewer() {
         addRegionOverlays();
     });
 
+    // Override fullscreen to include the whole app (sidebar + viewer)
+    viewer.addHandler('pre-full-screen', function(event) {
+        event.preventDefaultAction = true;  // stop OSD from going fullscreen on its own
+        const appEl = document.querySelector('.app');
+        if (!document.fullscreenElement) {
+            appEl.requestFullscreen().catch(() => {});
+        } else {
+            document.exitFullscreen().catch(() => {});
+        }
+    });
+
+    // Sync OSD button state when exiting fullscreen via Escape
+    document.addEventListener('fullscreenchange', function() {
+        if (!document.fullscreenElement && viewer.isFullPage()) {
+            viewer.setFullScreen(false);
+        }
+    });
+
     // Right-click to zoom out
     const osdEl = document.getElementById('osd-viewer');
     osdEl.addEventListener('contextmenu', function(e) {
@@ -702,6 +740,15 @@ function renderAnnotations(regionKey) {
     }
 
     panel.innerHTML = html;
+    updateLineBlockVisibility();
+}
+
+// --- Hide line blocks when all four line layers are hidden ---
+function updateLineBlockVisibility() {
+    const anyLineLayerVisible = visibleLayers.script || visibleLayers.transliteration || visibleLayers.literal || visibleLayers.modern;
+    document.querySelectorAll('.line-block').forEach(block => {
+        block.classList.toggle('all-hidden', !anyLineLayerVisible);
+    });
 }
 
 function escapeHtml(text) {
@@ -723,6 +770,9 @@ function setupLayerToggles() {
             document.querySelectorAll(`[data-layer="${layer}"]`).forEach(el => {
                 el.classList.toggle('hidden', !this.checked);
             });
+
+            // Hide/show line blocks based on whether any line layers are visible
+            updateLineBlockVisibility();
         });
     });
 }
