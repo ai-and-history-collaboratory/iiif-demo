@@ -343,6 +343,86 @@ body {
     background: #457b9d;
 }
 
+/* Credits badge */
+.credits-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 100;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(20, 20, 20, 0.85);
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    backdrop-filter: blur(8px);
+}
+
+.credits-badge:hover {
+    background: rgba(40, 40, 40, 0.95);
+    border-color: #457b9d;
+}
+
+.credits-icon {
+    font-size: 16px;
+    color: #888;
+}
+
+.credits-badge:hover .credits-icon {
+    color: #ccc;
+}
+
+.credits-panel {
+    position: absolute;
+    top: 50px;
+    left: 12px;
+    z-index: 100;
+    background: rgba(20, 20, 20, 0.95);
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 14px 18px;
+    backdrop-filter: blur(12px);
+    display: none;
+    min-width: 240px;
+}
+
+.credits-panel.visible {
+    display: block;
+}
+
+.credits-title {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.credits-line {
+    font-size: 12px;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.credits-line strong {
+    color: #fff;
+}
+
+.credits-sep {
+    height: 1px;
+    background: #333;
+    margin: 8px 0;
+}
+
+.credits-small {
+    font-size: 11px;
+    color: #666;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     .app {
@@ -424,6 +504,20 @@ body {
     <!-- Viewer -->
     <div class="viewer-area">
         <div id="osd-viewer"></div>
+        <div class="credits-badge" id="creditsBadge" title="Click for build details">
+            <span class="credits-icon">&#x2699;</span>
+        </div>
+        <div class="credits-panel" id="creditsPanel">
+            <div class="credits-content">
+                <div class="credits-title">Built with</div>
+                <div class="credits-line"><strong>Claude Cowork</strong> (Opus 4.6)</div>
+                <div class="credits-line">OpenSeadragon &middot; IIIF Image API 2.1</div>
+                <div class="credits-line">Tiles: iiif_static (Python)</div>
+                <div class="credits-line">HTR: V3-S-Minimal + Claude Opus 4.5</div>
+                <div class="credits-sep"></div>
+                <div class="credits-line credits-small">AI + History Collaboratory, Feb 2026</div>
+            </div>
+        </div>
         <div class="info-bar">
             <span>AI + History Collaboratory &mdash; IIIF Demo</span>
             <span>
@@ -472,14 +566,24 @@ function initViewer() {
         showNavigator: true,
         navigatorPosition: "TOP_LEFT",
         navigatorSizeRatio: 0.15,
-        animationTime: 0.5,
-        blendTime: 0.1,
+        animationTime: 1.2,
+        blendTime: 0.3,
         constrainDuringPan: true,
         maxZoomPixelRatio: 4,
         visibilityRatio: 0.5,
         minZoomLevel: 0.5,
+        springStiffness: 6.5,
+        zoomPerClick: 1.5,
+        zoomPerScroll: 1.15,
         gestureSettingsMouse: {
-            clickToZoom: false
+            clickToZoom: true,
+            scrollToZoom: true,
+            dblClickToZoom: true,
+            flickEnabled: true
+        },
+        gestureSettingsTouch: {
+            pinchToZoom: true,
+            flickEnabled: true
         }
     });
 
@@ -656,12 +760,32 @@ function setupResize() {
     });
 }
 
+// --- Credits badge ---
+function setupCredits() {
+    const badge = document.getElementById('creditsBadge');
+    const panel = document.getElementById('creditsPanel');
+
+    badge.addEventListener('click', function(e) {
+        e.stopPropagation();
+        panel.classList.toggle('visible');
+    });
+
+    document.addEventListener('click', function() {
+        panel.classList.remove('visible');
+    });
+
+    panel.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+}
+
 // --- Initialize ---
 document.addEventListener('DOMContentLoaded', function() {
     initViewer();
     setupLayerToggles();
     setupRegionButtons();
     setupResize();
+    setupCredits();
 });
 </script>
 
