@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIIF Demo — AI + History Collaboratory</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            max-width: 720px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            line-height: 1.7;
+            color: #2c2c2c;
+            background: #fafaf8;
+        }
+        h1 { font-size: 1.6rem; margin-bottom: 0.3rem; }
+        h2 { font-size: 1.2rem; margin-top: 2rem; color: #555; }
+        a { color: #1a5276; }
+        code { background: #eee; padding: 0.15em 0.4em; border-radius: 3px; font-size: 0.9em; }
+        .manifest-url {
+            background: #f0f4f8;
+            border: 1px solid #d0d8e0;
+            border-radius: 6px;
+            padding: 1rem 1.2rem;
+            margin: 1rem 0;
+            word-break: break-all;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+        .step { margin: 0.8rem 0; }
+        footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-size: 0.85rem; color: #888; }
+    </style>
+</head>
+<body>
+    <h1>IIIF Demo — AI + History Collaboratory</h1>
+    <p>Static IIIF image tiles served from GitHub Pages. Prepared for the Collaboratory session on 24 February 2026: <em>"Exploring MCP as an Interface with Databases."</em></p>
+
+    <h2>View in Mirador</h2>
+    <p>Copy the manifest URL below and paste it into the <a href="https://projectmirador.org/demo" target="_blank">Mirador demo viewer</a>:</p>
+    <div class="manifest-url">https://ai-and-history-collaboratory.github.io/iiif-demo/manifests/demo-manifest.json</div>
+
+    <p><strong>How to open:</strong></p>
+    <div class="step">1. Go to <a href="https://projectmirador.org/demo" target="_blank">projectmirador.org/demo</a></div>
+    <div class="step">2. Click the <strong>+ (add resource)</strong> button in the top left</div>
+    <div class="step">3. Paste the manifest URL above into the input field and click <strong>Add</strong></div>
+    <div class="step">4. Select the image to open — you can zoom in and out to explore the manuscript</div>
+
+    <h2>Images in this Demo</h2>
+    <p><strong>Takvim-i Vekayi, No. 1 (1 November 1831)</strong> — First page of the first issue of the Ottoman Government Gazette, published in Istanbul. Source: Wikimedia Commons. Public Domain.</p>
+
+    <h2>How This Was Made</h2>
+    <p>The source image (13,075 × 9,129 pixels) was downloaded from Wikimedia Commons, downscaled to 5,000 × 3,491 pixels, and converted into a pyramid of 256×256 pixel IIIF tiles at five zoom levels using Claude Cowork and the Python <code>iiif</code> library. The tiles, <code>info.json</code>, and IIIF Presentation API v3 manifest were generated programmatically, then pushed to this GitHub Pages site. No image server is required — the entire setup is static files.</p>
+
+    <footer>
+        <p><a href="https://github.com/ai-and-history-collaboratory/iiif-demo">Repository</a> · AI + History Collaboratory · February 2026</p>
+    </footer>
+</body>
+</html>
