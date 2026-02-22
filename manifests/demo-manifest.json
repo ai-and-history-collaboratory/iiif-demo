@@ -2,6 +2,7 @@
   "@context": "http://iiif.io/api/presentation/3/context.json",
   "id": "https://ai-and-history-collaboratory.github.io/iiif-demo/manifests/demo-manifest.json",
   "type": "Manifest",
+  "viewingDirection": "right-to-left",
   "label": {
     "en": [
       "AI + History Collaboratory: IIIF Demo"
