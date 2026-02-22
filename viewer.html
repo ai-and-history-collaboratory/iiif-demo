@@ -60,66 +60,48 @@ body {
     color: #888;
 }
 
-/* Page tabs */
+/* Page navigation */
 
-.spread-tabs {
+.page-nav {
     display: flex;
-    gap: 3px;
-    padding: 8px 10px 4px;
-    background: #f8f9fa;
-    border-bottom: 1px solid #e9ecef;
-}
-.spread-tab {
-    flex: 1;
-    padding: 4px 6px;
-    background: #e9ecef;
-    border: 1px solid #dee2e6;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 11px;
-    font-weight: 500;
-    color: #666;
-    transition: all 0.2s;
-    text-align: center;
-}
-.spread-tab:hover {
-    background: #dee2e6;
-    color: #333;
-}
-.spread-tab.active {
-    background: #4a90d9;
-    color: white;
-    border-color: #3a7bc8;
-}
-.page-tabs {
-    display: flex;
-    border-bottom: 1px solid #2a2a2a;
+    flex-direction: row-reverse;
+    gap: 6px;
+    padding: 10px;
     background: #161616;
+    border-bottom: 1px solid #2a2a2a;
+    align-items: center;
 }
 
-.page-tab {
-    flex: 1;
-    padding: 10px 8px;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid transparent;
+.page-btn {
+    flex: 0 0 calc((100% - 42px) / 8);
+    min-width: 0;
+    padding: 8px 6px;
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 5px;
     color: #777;
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.15s;
     text-align: center;
+    user-select: none;
 }
 
-.page-tab:hover {
+.page-btn:hover {
     color: #ccc;
-    background: #1a1a1a;
+    background: #222;
+    border-color: #3a3a3a;
 }
 
-.page-tab.active {
+.page-btn.active {
     color: #fff;
-    border-bottom-color: #457b9d;
-    background: #1a2230;
+    background: #457b9d;
+    border-color: #457b9d;
+}
+
+.page-btn.on-spread {
+    background: #2a3a4a;
 }
 
 /* Active region indicator */
@@ -291,14 +273,15 @@ body {
 .no-selection {
     text-align: center;
     padding: 40px 20px;
-    color: #555;
+    color: #999;
     font-size: 13px;
+    line-height: 1.6;
 }
 
 .no-selection .icon {
     font-size: 32px;
     margin-bottom: 12px;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .line-block {
@@ -393,11 +376,66 @@ body {
     flex: 1;
     position: relative;
     background: #000;
+    display: flex;
+    flex-direction: column;
 }
 
 #osd-viewer {
+    flex: 1;
     width: 100%;
-    height: 100%;
+}
+
+/* Thumbnail strip */
+.thumb-strip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: #0d0d0d;
+    border-top: 1px solid #222;
+}
+
+.thumb-item {
+    position: relative;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    transition: border-color 0.2s, opacity 0.2s;
+    opacity: 0.6;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.thumb-item:hover {
+    opacity: 0.85;
+    border-color: #555;
+}
+
+.thumb-item.active {
+    opacity: 1;
+    border-color: #457b9d;
+    box-shadow: 0 0 8px rgba(69, 123, 157, 0.4);
+}
+
+.thumb-item img {
+    display: block;
+    height: 56px;
+    width: auto;
+}
+
+.thumb-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 9px;
+    font-weight: 600;
+    color: #ccc;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 1px 0;
+    letter-spacing: 0.03em;
 }
 
 /* Overlay rectangles */
@@ -421,13 +459,9 @@ body {
 
 /* Info bar */
 .info-bar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 8px 16px;
-    background: rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(8px);
+    padding: 6px 16px;
+    background: #0a0a0a;
+    border-top: 1px solid #1a1a1a;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -563,6 +597,13 @@ body {
     .viewer-area {
         height: 55vh;
     }
+    .thumb-item img {
+        height: 40px;
+    }
+    .thumb-strip {
+        padding: 5px 8px;
+        gap: 4px;
+    }
 }
 </style>
 </head>
@@ -584,18 +625,16 @@ body {
             </div>
         </div>
 
-        <!-- Page tabs -->
-        <!-- Spread selector -->
-        <div class="spread-tabs" id="spreadTabs">
-            <button class="spread-tab active" data-spread="spread1" title="Pages 1–2">Sp.1</button>
-            <button class="spread-tab" data-spread="spread2" title="Pages 3–4">Sp.2</button>
-            <button class="spread-tab" data-spread="spread3" title="Pages 5–6">Sp.3</button>
-            <button class="spread-tab" data-spread="spread4" title="Pages 7–8">Sp.4</button>
-        </div>
-        <!-- Page tabs (RTL order within each spread) -->
-        <div class="page-tabs" id="pageTabs">
-            <button class="page-tab" data-page="p2">P2</button>
-            <button class="page-tab active" data-page="p1">P1</button>
+        <!-- Page navigation (8 pages, right-to-left order) -->
+        <div class="page-nav" id="pageNav">
+            <button class="page-btn" data-page="p8">P8</button>
+            <button class="page-btn" data-page="p7">P7</button>
+            <button class="page-btn" data-page="p6">P6</button>
+            <button class="page-btn" data-page="p5">P5</button>
+            <button class="page-btn" data-page="p4">P4</button>
+            <button class="page-btn" data-page="p3">P3</button>
+            <button class="page-btn" data-page="p2">P2</button>
+            <button class="page-btn active" data-page="p1">P1</button>
         </div>
 
         <!-- Active region indicator -->
@@ -663,6 +702,24 @@ body {
     <div class="viewer-area">
         <div id="osd-viewer"></div>
         <div class="sidebar-toggle" id="sidebarToggle" title="Toggle annotations panel">&#x25C0;</div>
+        <div class="thumb-strip" id="thumbStrip">
+            <div class="thumb-item active" data-spread="spread1" title="Spread 1 — Pages 1–2">
+                <img src="images/takvim-i-vekayi-1831/full/156,109/0/default.jpg" alt="Pages 1–2">
+                <div class="thumb-label">P1–P2</div>
+            </div>
+            <div class="thumb-item" data-spread="spread2" title="Spread 2 — Pages 3–4">
+                <img src="images/takvim-i-vekayi-1831-spread2/full/312,218/0/default.jpg" alt="Pages 3–4">
+                <div class="thumb-label">P3–P4</div>
+            </div>
+            <div class="thumb-item" data-spread="spread3" title="Spread 3 — Pages 5–6">
+                <img src="images/takvim-i-vekayi-1831-spread3/full/313,219/0/default.jpg" alt="Pages 5–6">
+                <div class="thumb-label">P5–P6</div>
+            </div>
+            <div class="thumb-item" data-spread="spread4" title="Spread 4 — Pages 7–8">
+                <img src="images/takvim-i-vekayi-1831-spread4/full/312,219/0/default.jpg" alt="Pages 7–8">
+                <div class="thumb-label">P7–P8</div>
+            </div>
+        </div>
         <div class="info-bar">
             <span>AI + History Collaboratory &mdash; IIIF Demo</span>
             <span>
@@ -727,22 +784,13 @@ const PAGE_SPREAD = {
     p7: 'spread4', p8: 'spread4'
 };
 
-// --- Update page tab buttons to match current spread ---
-function updatePageTabButtons() {
-    const container = document.getElementById('pageTabs');
+// --- Update spread indicators on all page buttons ---
+function updateSpreadIndicators() {
     const spreadData = SPREAD_DATA[currentSpread];
-    const pages = spreadData.pages;
-    // RTL: reversed order in display
-    let html = '';
-    for (let i = pages.length - 1; i >= 0; i--) {
-        const p = pages[i];
-        const num = p.replace('p', '');
-        const isActive = p === activePage ? ' active' : '';
-        html += '<button class="page-tab' + isActive + '" data-page="' + p + '">P' + num + '</button>';
-    }
-    container.innerHTML = html;
-    // Re-attach event handlers
-    setupPageTabs();
+    const spreadPages = spreadData.pages;
+    document.querySelectorAll('.page-btn').forEach(btn => {
+        btn.classList.toggle('on-spread', spreadPages.includes(btn.dataset.page));
+    });
 }
 
 // --- State ---
@@ -823,8 +871,8 @@ function switchSpread(spreadKey) {
     });
     overlays = {};
 
-    // Update page tabs for new spread
-    updatePageTabButtons();
+    // Update spread indicators on page buttons
+    updateSpreadIndicators();
 
     // Replace tile source
     viewer.open(getActiveData().image_service + "/info.json");
@@ -908,10 +956,11 @@ function selectRegion(regionKey) {
             overlays = {};
 
             activePage = targetPage;
-            updatePageTabButtons();
-            document.querySelectorAll('.spread-tab').forEach(t => {
-                t.classList.toggle('active', t.dataset.spread === targetSpread);
+            document.querySelectorAll('.page-btn').forEach(t => {
+                t.classList.toggle('active', t.dataset.page === targetPage);
             });
+            updateSpreadIndicators();
+            updateActiveThumbnail();
             populateRegionButtons();
 
             viewer.addOnceHandler('open', function() {
@@ -924,9 +973,10 @@ function selectRegion(regionKey) {
 
         if (targetPage !== activePage) {
             activePage = targetPage;
-            document.querySelectorAll('.page-tab').forEach(t => {
+            document.querySelectorAll('.page-btn').forEach(t => {
                 t.classList.toggle('active', t.dataset.page === targetPage);
             });
+            updateSpreadIndicators();
             populateRegionButtons();
         }
     }
@@ -966,6 +1016,9 @@ function finishSelectRegion(regionKey) {
     indicator.classList.add('has-region');
 
     renderAnnotations(regionKey);
+
+    // Scroll annotation panel to top when switching regions
+    document.getElementById('annotationPanel').scrollTop = 0;
 }
 
 // --- Render annotation lines ---
@@ -1071,7 +1124,7 @@ function populateRegionButtons() {
 }
 
 function setupPageTabs() {
-    document.querySelectorAll('.page-tab').forEach(tab => {
+    document.querySelectorAll('.page-btn').forEach(tab => {
         tab.addEventListener('click', function() {
             const page = this.dataset.page;
             if (page === activePage) return;
@@ -1079,16 +1132,15 @@ function setupPageTabs() {
             const targetSpread = PAGE_SPREAD[page];
             if (targetSpread !== currentSpread) {
                 switchSpread(targetSpread);
-                document.querySelectorAll('.spread-tab').forEach(t => {
-                    t.classList.toggle('active', t.dataset.spread === targetSpread);
-                });
+                updateActiveThumbnail();
             }
 
             activePage = page;
 
-            document.querySelectorAll('.page-tab').forEach(t => {
+            document.querySelectorAll('.page-btn').forEach(t => {
                 t.classList.toggle('active', t.dataset.page === page);
             });
+            updateSpreadIndicators();
 
             populateRegionButtons();
 
@@ -1133,37 +1185,6 @@ function setupPageTabs() {
     });
 }
 
-function setupSpreadTabs() {
-    document.querySelectorAll('.spread-tab').forEach(tab => {
-        tab.addEventListener('click', function() {
-            const spread = this.dataset.spread;
-            if (spread === currentSpread) return;
-
-            switchSpread(spread);
-
-            document.querySelectorAll('.spread-tab').forEach(t => {
-                t.classList.toggle('active', t.dataset.spread === spread);
-            });
-
-            const spreadData = SPREAD_DATA[spread];
-            const firstPage = spreadData.pages[0];
-            activePage = firstPage;
-
-            document.querySelectorAll('.page-tab').forEach(t => {
-                t.classList.toggle('active', t.dataset.page === firstPage);
-            });
-
-            populateRegionButtons();
-
-            activeRegion = null;
-            const indicator = document.getElementById('regionIndicator');
-            indicator.querySelector('.region-indicator-text').textContent = 'No region selected';
-            indicator.classList.remove('has-region');
-            document.getElementById('annotationPanel').innerHTML =
-                '<div class="no-selection"><div class="icon">&#x1f50d;</div>Click a highlighted region on the image<br>or select a region above</div>';
-        });
-    });
-}
 
 function setupAccordions() {
     ['layers', 'regions'].forEach(id => {
@@ -1228,17 +1249,58 @@ function setupSidebarToggle() {
     });
 }
 
+// --- Thumbnail strip ---
+function setupThumbnails() {
+    document.querySelectorAll('.thumb-item').forEach(thumb => {
+        thumb.addEventListener('click', function() {
+            const spread = this.dataset.spread;
+            if (spread === currentSpread) return;
+
+            switchSpread(spread);
+
+            // Update thumbnail active state
+            updateActiveThumbnail();
+
+            // Select first page of the new spread
+            const spreadData = SPREAD_DATA[spread];
+            const firstPage = spreadData.pages[0];
+            activePage = firstPage;
+
+            document.querySelectorAll('.page-btn').forEach(t => {
+                t.classList.toggle('active', t.dataset.page === firstPage);
+            });
+            updateSpreadIndicators();
+
+            populateRegionButtons();
+
+            activeRegion = null;
+            const indicator = document.getElementById('regionIndicator');
+            indicator.querySelector('.region-indicator-text').textContent = 'No region selected';
+            indicator.classList.remove('has-region');
+            document.getElementById('annotationPanel').innerHTML =
+                '<div class="no-selection"><div class="icon">&#x1f50d;</div>Click a highlighted region on the image<br>or select a region above</div>';
+        });
+    });
+}
+
+function updateActiveThumbnail() {
+    document.querySelectorAll('.thumb-item').forEach(t => {
+        t.classList.toggle('active', t.dataset.spread === currentSpread);
+    });
+}
+
 // --- Initialize ---
 document.addEventListener('DOMContentLoaded', function() {
     initViewer();
     setupLayerToggles();
     setupPageTabs();
-    setupSpreadTabs();
     setupAccordions();
     populateRegionButtons();
     setupResize();
     setupCredits();
     setupSidebarToggle();
+    setupThumbnails();
+    updateSpreadIndicators();
 });
 </script>
 
