@@ -821,7 +821,6 @@ function selectRegion(regionKey) {
     // Update region indicator bar
     const indicator = document.getElementById('regionIndicator');
     const indicatorText = indicator.querySelector('.region-indicator-text');
-    const region = DATA.regions[regionKey];
     indicatorText.textContent = region.label;
     indicator.classList.add('has-region');
 
