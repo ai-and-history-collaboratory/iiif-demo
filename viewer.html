@@ -834,6 +834,8 @@ function initViewer() {
 
     viewer.addHandler('open', function() {
         addRegionOverlays();
+        // Apply slight zoom-out so image doesn't press against edges
+        applyInitialPadding();
     });
 
     viewer.addHandler('pre-full-screen', function(event) {
@@ -861,6 +863,29 @@ function initViewer() {
 }
 
 // --- Switch spread (swap tile source) ---
+// --- Apply slight padding to initial view so image doesn't fill edge-to-edge ---
+function applyInitialPadding() {
+    const tiledImage = viewer.world.getItemAt(0);
+    if (!tiledImage) return;
+    const bounds = tiledImage.getBounds();
+    const padding = 0.06; // 6% breathing room on each side
+    const padded = new OpenSeadragon.Rect(
+        bounds.x - bounds.width * padding,
+        bounds.y - bounds.height * padding,
+        bounds.width * (1 + padding * 2),
+        bounds.height * (1 + padding * 2)
+    );
+    viewer.viewport.fitBounds(padded, true); // true = immediately, no animation on load
+}
+
+// --- Preload info.json for all spreads to warm browser and CDN caches ---
+function preloadInfoJsons() {
+    Object.values(SPREAD_DATA).forEach(function(spread) {
+        var url = spread.image_service + '/info.json';
+        fetch(url).catch(function() {}); // fire-and-forget; errors are harmless
+    });
+}
+
 function switchSpread(spreadKey) {
     if (spreadKey === currentSpread) return;
     currentSpread = spreadKey;
@@ -1301,6 +1326,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupSidebarToggle();
     setupThumbnails();
     updateSpreadIndicators();
+    preloadInfoJsons();
 });
 </script>
 
