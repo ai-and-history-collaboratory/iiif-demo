@@ -1,0 +1,81 @@
+{
+  "@context": "http://iiif.io/api/image/2/context.json",
+  "@id": "https://ai-and-history-collaboratory.github.io/iiif-demo/images/takvim-i-vekayi-1831-spread4",
+  "height": 3505,
+  "profile": [
+    "http://iiif.io/api/image/2/level0.json",
+    {
+      "formats": [
+        "jpg"
+      ],
+      "qualities": [
+        "default"
+      ]
+    }
+  ],
+  "protocol": "http://iiif.io/api/image",
+  "sizes": [
+    {
+      "height": 1752,
+      "width": 2501
+    },
+    {
+      "height": 876,
+      "width": 1250
+    },
+    {
+      "height": 438,
+      "width": 625
+    },
+    {
+      "height": 219,
+      "width": 312
+    },
+    {
+      "height": 110,
+      "width": 156
+    },
+    {
+      "height": 55,
+      "width": 78
+    },
+    {
+      "height": 28,
+      "width": 39
+    },
+    {
+      "height": 14,
+      "width": 20
+    },
+    {
+      "height": 7,
+      "width": 10
+    },
+    {
+      "height": 4,
+      "width": 5
+    },
+    {
+      "height": 2,
+      "width": 2
+    },
+    {
+      "height": 1,
+      "width": 1
+    }
+  ],
+  "tiles": [
+    {
+      "height": 256,
+      "scaleFactors": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "width": 256
+    }
+  ],
+  "width": 5002
+}
